@@ -56,14 +56,14 @@ DIV.slider DIV.stop {POSITION: static; BORDER-RIGHT-WIDTH: 2px; BORDER-TOP-WIDTH
 .gameBox2 .item2 .list .box4{float:left; width:320px; margin-left:4px;}
 .gameBox2 .item2 .list .box4 ul{ text-align:center;}
 .gameBox2 .item2 .list .box4 ul li{ float:left; background:#0A69AD; margin-right:2px; margin-bottom:2px; border-bottom:#064069 1px solid; border-right:#064069 1px solid;border-top:#5C9BC8 1px solid; border-left:#5C9BC8 1px solid; color:#fff;}
-.gameBox2 .item2 .list .box4 ul .on{background:#0A3E65; border-top:#5C9BC8 1px solid; border-left:#5C9BC8 1px solid;}
+.gameBox2 .item2 .list .box4 ul .on{background:#0A3E65; border-top:#5C9BC8 1px solid; border-left:#5C9BC8 1px solid; color:#ff7700;}
 .gameBox2 .item2 .list .box4 ul .on2{background:#0A3E65; border-top:#5C9BC8 1px solid; border-left:#5C9BC8 1px solid;}
 .gameBox2 .item2 .list .box4 .ul2{}
-.gameBox2 .item2 .list .box4 .ul2 li{width:155px;}
+.gameBox2 .item2 .list .box4 .ul2 li{width:146px;}
 .gameBox2 .item2 .list .box4 .ul3{}
-.gameBox2 .item2 .list .box4 .ul3 li{width:102px;}
+.gameBox2 .item2 .list .box4 .ul3 li{width:96px;}
 .gameBox2 .item2 .list .box4 .ul10{}
-.gameBox2 .item2 .list .box4 .ul10 li{width:28px;}
+.gameBox2 .item2 .list .box4 .ul10 li{width:26px;}
 .gameBox2 .item2 .list .xs{ float:left; width:98px; text-align:center;background:#0A3E65;border-bottom:#064069 1px solid; border-right:#064069 1px solid;border-top:#5C9BC8 1px solid; border-left:#5C9BC8 1px solid;}
 .gameBox2 .item2 .list .rel{ float:left; width:98px; text-align:center;background:#0A3E65;border-bottom:#064069 1px solid; border-right:#064069 1px solid;border-top:#5C9BC8 1px solid; border-left:#5C9BC8 1px solid; color:#fff;}
 .clear10{ clear:both; height:10px; overflow:hidden;}
@@ -121,6 +121,8 @@ TABLE.gameCurrentList TR.disabled1 TD TABLE.teamName {width:100%;}
 TABLE.gameCurrentList TR.disabled1 TD TABLE.teamName TD {border:none;}
 TABLE.gameCurrentList TR.disabled1 TD TABLE.normal {width:100%;}
 TABLE.gameCurrentList TR.disabled1 TD TABLE.normal TD {border:none;}
+TABLE.gameCurrentList TR.disabled1 TD.miss {CURSOR:default;  color : red}
+TABLE.gameCurrentList TR.disabled1 TD.winner {CURSOR:default;  color : green}
 
 TABLE.gameCurrentList TR.row1 TD {padding:1px;}
 TABLE.gameCurrentList TR.row1 TD TABLE.normal {width:100%;}
@@ -129,6 +131,8 @@ TABLE.gameCurrentList TR.row1 TD.normal {CURSOR:default;}
 TABLE.gameCurrentList TR.row1 TD.disableCell {BACKGROUND:#252525;COLOR:#686868;CURSOR:default;}
 TABLE.gameCurrentList TR.row1 TD.disableCell TABLE.teamName {width:100%;}
 TABLE.gameCurrentList TR.row1 TD.disableCell TABLE.teamName TD {border:none;CURSOR:default;}
+
+
 TABLE.gameCurrentList TR.row1 TD.mouseOutColor {BACKGROUND:#2e0920;}
 TABLE.gameCurrentList TR.row1 TD.mouseOutColor TABLE.teamName {width:100%;}
 TABLE.gameCurrentList TR.row1 TD.mouseOutColor TABLE.teamName TD {border:none;}

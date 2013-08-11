@@ -1,0 +1,610 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+</head>
+
+<body topmargin="0" bgcolor="#000000">
+<link rel="stylesheet" type="text/css" href="./css/default.css">
+<style type="text/css">
+<!--
+body {background:url(./images/background_main.gif) #000000 repeat-x;}
+-->
+</style>
+<script type="text/javascript">
+<!--
+var imgCommonDirPath = "./images/";
+var topMargin = 115;
+
+function addOnFavorite() {
+	if (navigator.appName == "Microsoft Internet Explorer") {
+		window.external.AddFavorite('http://www.ubat-ball.com', 'ubat');
+	}
+}
+function setToHome() {
+	if (navigator.appName == "Microsoft Internet Explorer") {
+		if(confirm("ubat을(를) 시작페이지로 설정합니다.\n\n계속 하시겠습니까?")) {
+			//this.style.behavior='url(http://www.ubat-ball.com)';
+			//this.setHomePage(location.href);
+		}
+	}
+}
+// -->
+</script>
+<script type="text/javascript" src="./js/fx_JScript.js"></script>
+<script type="text/javascript" src="./js/fx_dsClock.js"></script>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#000000">
+	<tbody><tr>
+    	<td width="100%">
+            <table border="0" cellspacing="0" cellpadding="0" width="989" align="center">
+                <tbody><tr>
+                    <td align="right">
+                        <table border="0" cellspacing="0" cellpadding="0" align="right">
+                            <tbody><tr>
+                                <td>
+									<a href="http://www.ubat-ball.com/_localoffice/_service/info.asp?category=2">핸디캡의 이해</a> |
+                                    <a href="http://www.ubat-ball.com/_localoffice/_service/info.asp?category=1">베팅규정</a> |
+                                    <a href="http://www.ubat-ball.com/_localoffice/_service/lsinfo.asp?type=1">라이브스코어</a> |
+                                    <a href="http://www.ubat-ball.com/_localoffice/_service/myaccount.asp" class="white">회원정보</a> |
+                                    <a href="http://www.ubat-ball.com/_localoffice/_service/logout.asp" class="white">로그아웃</a>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+
+<table border="0" cellspacing="0" cellpadding="0" width="989" align="center">
+	<tbody><tr>
+    	<td style="padding-top:10px;">
+            <table border="0" cellspacing="0" cellpadding="0" width="989" align="center">
+                <tbody><tr>
+                	<td rowspan="2"><a href="http://www.ubat-ball.com/_localoffice/"><img src="./images/ubat-ball.com.logo.png" border="0"></a></td>
+                    <td>
+
+                        <table border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tbody><tr>
+                                <td><img src="./images/top_sub_menu_bg_left.png" border="0"></td>
+                                <td bgcolor="#2060a2">
+                                    <table border="0" cellspacing="0" cellpadding="0">
+                                        <tbody><tr>
+											<td><a href="http://www.ubat-ball.com/_localoffice/_service/myaccount.asp"><img src="./images/2106947535_zxUStDd0_icon_level_2.png" width="16" height="16" border="0" alt="陈瑞鹏"></a></td>
+                                            <td style="padding-top:2px;color:#74badc;"><a href="http://www.ubat-ball.com/_localoffice/_service/myaccount.asp" class="blue">陈瑞鹏</a> 祝您玩的开心^^!</td><td>
+											</td>
+											<td style="padding-left:7px;"><a href="http://www.ubat-ball.com/_localoffice/main.asp#"><img src="./images/icon_money.gif" border="0"></a></td>
+                                            <td style="padding-top:2px;"><a href="http://www.ubat-ball.com/_localoffice/main.asp#" class="blue">我的金币:</a> <a href="http://www.ubat-ball.com/_localoffice/main.asp#" class="orange">40元</a></td><td>
+                                            </td>
+											<td style="padding-left:7px;"><a href="http://www.ubat-ball.com/_localoffice/_service/message.asp"><img src="./images/icon_memo.gif" border="0"></a></td>
+                                            <td style="padding-top:2px;"><a href="http://www.ubat-ball.com/_localoffice/_service/message.asp" class="blue">留言 78</a></td><td>
+											</td><td style="padding-left:7px;"><a href="http://www.ubat-ball.com/_localoffice/_service/betinfo.asp"><img src="./images/icon_result.gif" border="0"></a></td>
+                                            <td style="padding-top:2px;"><a href="http://www.ubat-ball.com/_localoffice/_service/betinfo.asp" class="blue">给管理员发留言</a></td><td>
+                                        </td></tr>
+                                    </tbody></table>
+                                </td>
+                                <td><img src="./images/top_sub_menu_bg_right.png" border="0"></td>
+                            </tr>
+                        </tbody></table>
+
+					</td>
+                	<td rowspan="2" style="padding-top:9px;">
+
+                    	<table border="0" cellspacing="0" cellpadding="0" align="right" style="background:url(./images/happy2012/clock_container.gif)">
+                        	<tbody><tr>
+                            	<td width="218" height="72" valign="top">
+                                    <table border="0" cellspacing="0" cellpadding="0" align="center">
+                                        <tbody><tr>
+                                            <td>
+                                                <table border="0" cellspacing="0" cellpadding="0" align="center">
+                                                	<tbody><tr><td height="12"></td></tr>
+                                                    <tr>
+                                                        <td>
+                                                            <table id="datetimeContainer" border="0" cellspacing="0" cellpadding="0" class="clock_container">
+                                                                <tbody><tr>
+                                                                    <td id="timeName0" width="25" class="selected">오전</td>
+                                                                    <td id="timeName1" width="25">오후</td>
+                                                                    <td width="15"></td>
+                                                                    <td id="weekName1" width="16">월</td>
+                                                                    <td id="weekName2" width="16">화</td>
+                                                                    <td id="weekName3" width="16" class="selected">수</td>
+                                                                    <td id="weekName4" width="16">목</td>
+                                                                    <td id="weekName5" width="16">금</td>
+                                                                    <td id="weekName6" width="16">토</td>
+                                                                    <td id="weekName0" width="16">일</td>
+                                                                </tr>
+                                                                <tr><td height="2"></td></tr>
+                                                                <tr>
+                                                                    <td><img id="timeCheck0" src="./images/clock_current_on.png" width="6" height="7"></td>
+                                                                    <td><img id="timeCheck1" src="./images/clock_current_off.png" width="6" height="7"></td>
+                                                                    <td></td>
+                                                                    <td><img id="weekCheck1" src="./images/clock_current_off.png" width="6" height="7"></td>
+                                                                    <td><img id="weekCheck2" src="./images/clock_current_off.png" width="6" height="7"></td>
+                                                                    <td><img id="weekCheck3" src="./images/clock_current_on.png" width="6" height="7"></td>
+                                                                    <td><img id="weekCheck4" src="./images/clock_current_off.png" width="6" height="7"></td>
+                                                                    <td><img id="weekCheck5" src="./images/clock_current_off.png" width="6" height="7"></td>
+                                                                    <td><img id="weekCheck6" src="./images/clock_current_off.png" width="6" height="7"></td>
+                                                                    <td><img id="weekCheck0" src="./images/clock_current_off.png" width="6" height="7"></td>
+                                                                </tr>
+                                                            </tbody></table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr><td height="7"></td></tr>
+                                                    <tr>
+                                                        <td>
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tbody><tr>
+                                                                    <td id="dateName" width="76" style="font-size:12px;">08월 07일</td>
+                                                                    <td><img id="timeHour1" src="./images/clock_dg_1.gif" width="11" height="16"><img id="timeHour2" src="./images/clock_dg_0.gif" width="11" height="16"></td>
+                                                                    <td width="16"></td>
+                                                                    <td><img id="timeMin1" src="./images/clock_dg_2.gif" width="11" height="16"><img id="timeMin2" src="./images/clock_dg_0.gif" width="11" height="16"></td>
+                                                                    <td width="17"></td>
+                                                                    <td><img id="timeSec1" src="./images/clock_dg_5.gif" width="11" height="16"><img id="timeSec2" src="./images/clock_dg_0.gif" width="11" height="16"></td>
+                                                                </tr>
+                                                            </tbody></table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody></table>
+											</td>
+										</tr>
+									</tbody></table>
+                                </td>
+							</tr>
+						</tbody></table>
+						<!-- 시계 끝 -->
+                    </td>
+				</tr>
+                <tr>
+                    <td>
+                    	<!-- 菜单 -->
+                        <table border="0" class="mainmenu" cellspacing="0" cellpadding="0" align="center">
+                            <tbody><tr>
+								<td><a href="./games.html">比赛</a></td>
+                                <td style="padding-left:15px;padding-right:15px;"><img src="./images/main_partition.gif" width="3" height="18"></td>
+								<td><a href="./games_over.html">比赛结果</a></td>
+                                <td style="padding-left:15px;padding-right:15px;"><img src="./images/main_partition.gif" width="3" height="18"></td>
+								<td><a href="./recharge.html">充值</a></td>
+                                <td style="padding-left:15px;padding-right:15px;"><img src="./images/main_partition.gif" width="3" height="18"></td>
+								<td><a href="./refund.html">提现</a></td>
+                                <td style="padding-left:15px;padding-right:15px;"><img src="./images/main_partition.gif" width="3" height="18"></td>
+								<td><a href="./game_intro.html">游戏介绍</a></td>
+                                <td style="padding-left:15px;padding-right:15px;"><img src="./images/main_partition.gif" width="3" height="18"></td>
+								<td><a href="./active.html">活动</a></td>
+                              
+                            </tr>
+                        </tbody></table>
+                        <!-- 菜单结束 -->
+					</td>
+				</tr>
+			</tbody></table>
+        </td>
+	</tr>
+</tbody></table>
+<!-- 头部结束 -->
+
+<table border="0" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td height="10"></td></tr></tbody></table>
+<!-- 내용(컨텐츠) 시작 -->
+
+<script type="text/javascript" src="./js/fx_betlistaction.js"></script>
+<script type="text/javascript" src="./js/fx_dhtml2.js"></script>
+<script type="text/javascript" src="./js/fx_frame.js"></script>
+<script type="text/javascript" src="./js/fx_odd2.js"></script>
+<script type="text/javascript" src="./js/fx_slider.js"></script>
+<table border="0" cellspacing="0" cellpadding="0" width="989" align="center">
+<tbody><tr>
+<td valign="top" width="767">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%" class="contentBox">
+		<tbody><tr><td height="7" bgcolor="#003247" align="center"><img src="./images/contentBox_b_HL.gif"></td></tr>
+		
+					<tr><td height="10"></td></tr>
+					<tr>
+						<td width="100%" height="516" valign="top" style="background:url(./images/contentBox_BG_t_r.gif) bottom right no-repeat;padding-left:3px;padding-right:3px">
+							<table border="0" cellspacing="0" cellpadding="0" class="gameCurrentHeader">
+																		<tbody><tr>
+									<td style="width:28px;">&nbsp;</td>
+									<td style="width:72px;"><img src="./images/gamelist_t_01.gif"></td>
+									<td style="width:2px;"><img src="./images/gamelist_t_seperator.gif"></td>
+									<td style="width:180px;"><img src="./images/gamelist_t_03.gif"></td>
+									<td style="width:2px;"><img src="./images/gamelist_t_seperator.gif"></td>
+									<td style="width:191px;"><img src="./images/gamelist_t_04.gif"></td>
+									<td style="width:2px;"><img src="./images/gamelist_t_seperator.gif"></td>
+									<td style="width:45px;"><img src="./images/gamelist_t_05.gif"></td>
+									<td style="width:2px;"><img src="./images/gamelist_t_seperator.gif"></td>
+									<td style="width:191px;"><img src="./images/gamelist_t_06.gif"></td>
+									<td style="width:2px;"><img src="./images/gamelist_t_seperator.gif"></td>
+									<td><img src="./images/gamelist_t_08.gif"></td>
+								</tr>
+																	</tbody></table>
+							<table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td height="3"></td></tr></tbody></table>
+						<table border="0" cellspacing="0" cellpadding="0" class="gameCurrentList">
+								<colgroup>
+									<col style="TEXT-ALIGN: center; WIDTH: 28px">
+									<col style="TEXT-ALIGN: center; WIDTH: 66px">
+									<col style="WIDTH: 101px">
+									<col style="WIDTH: *">
+									<col style="TEXT-ALIGN: center; WIDTH: 44px;">
+									<col style="EXT-ALIGN: center; WIDTH: 80px">
+								</colgroup>
+								<tbody>
+
+<!-- 结束的比赛 - start -->
+<tr class="disabled1">
+	<td class="normal">&nbsp;</td>
+	<td class="normal">08-07 08:05</td>
+	<td class="normal">第一组比赛</td>
+	<td class="disableCell gameBox2">
+		
+		<div class="item2">
+			<div class="list">
+				<div class="box4">
+					<ul class="ul2">
+						<li val="26_2_1">
+							奇数
+						</li>
+						<li val="26_2_2">
+							偶数
+						</li>
+					</ul>
+				</div>
+				<div class="xs">
+					1.56
+				</div>
+			</div>
+			<div class="clear20">
+			</div>
+			<div class="list">
+				<div class="box4">
+					<ul class="ul3">
+						<li val="26_3_2">
+							1-3
+						</li>
+						<li val="26_3_5">
+							4-6
+						</li>
+						<li val="26_3_8">
+							7-9
+						</li>
+					</ul>
+				</div>
+				<div class="xs">
+					2.88
+				</div>
+			</div>
+			<div class="clear20">
+			</div>
+			<div class="list">
+				<div class="box4">
+					<ul class="ul10">
+						<li val="26_10_1" class="on">
+							1
+						</li>
+						<li val="26_10_2">
+							2
+						</li>
+						<li val="26_10_3">
+							3
+						</li>
+						<li val="26_10_4">
+							4
+						</li>
+						<li val="26_10_5">
+							5
+						</li>
+						<li val="26_10_6">
+							6
+						</li>
+						<li val="26_10_7">
+							7
+						</li>
+						<li val="26_10_8">
+							8
+						</li>
+						<li val="26_10_9">
+							9
+						</li>
+						<li val="26_10_0">
+							0
+						</li>
+					</ul>
+				</div>
+				<div class="xs">
+					9.88
+				</div>
+			</div>
+			<div class="clear20">
+			</div>
+		</div>
+
+
+	</td>
+	<td style="TEXT-ALIGN: center;">1</td>
+	<td style="TEXT-ALIGN: center;" class="winner">2000</td>
+</tr>
+<!-- 结束的比赛 - end -->
+
+<tr class="disabled1">
+	<td class="normal">&nbsp;</td>
+	<td class="normal">08-07 08:05</td>
+	<td class="normal">第二组比赛</td>
+	<td class="disableCell gameBox2">
+		
+		<div class="item2">
+			<div class="list">
+				<div class="box4">
+					<ul class="ul2">
+						<li val="26_2_1">
+							奇数
+						</li>
+						<li val="26_2_2">
+							偶数
+						</li>
+					</ul>
+				</div>
+				<div class="xs">
+					1.56
+				</div>
+			</div>
+			<div class="clear20">
+			</div>
+			<div class="list">
+				<div class="box4">
+					<ul class="ul3">
+						<li val="26_3_2">
+							1-3
+						</li>
+						<li val="26_3_5">
+							4-6
+						</li>
+						<li val="26_3_8">
+							7-9
+						</li>
+					</ul>
+				</div>
+				<div class="xs">
+					2.88
+				</div>
+			</div>
+			<div class="clear20">
+			</div>
+			<div class="list">
+				<div class="box4">
+					<ul class="ul10">
+						<li val="26_10_1" class="on">
+							1
+						</li>
+						<li val="26_10_2">
+							2
+						</li>
+						<li val="26_10_3">
+							3
+						</li>
+						<li val="26_10_4">
+							4
+						</li>
+						<li val="26_10_5">
+							5
+						</li>
+						<li val="26_10_6">
+							6
+						</li>
+						<li val="26_10_7">
+							7
+						</li>
+						<li val="26_10_8">
+							8
+						</li>
+						<li val="26_10_9">
+							9
+						</li>
+						<li val="26_10_0">
+							0
+						</li>
+					</ul>
+				</div>
+				<div class="xs">
+					9.88
+				</div>
+			</div>
+			<div class="clear20">
+			</div>
+		</div>
+
+
+	</td>
+	<td style="TEXT-ALIGN: center;">3</td>
+	<td style="TEXT-ALIGN: center;" class="miss">-MISS-</td>
+</tr>
+
+<tr class="disabled1">
+	<td class="normal">&nbsp;</td>
+	<td class="normal">08-07 08:05</td>
+	<td class="normal">第三组比赛</td>
+	<td class="disableCell gameBox2">
+		
+		<div class="item2">
+			<div class="list">
+				<div class="box4">
+					<ul class="ul2">
+						<li val="26_2_1">
+							奇数
+						</li>
+						<li val="26_2_2">
+							偶数
+						</li>
+					</ul>
+				</div>
+				<div class="xs">
+					1.56
+				</div>
+			</div>
+			<div class="clear20">
+			</div>
+			<div class="list">
+				<div class="box4">
+					<ul class="ul3">
+						<li val="26_3_2">
+							1-3
+						</li>
+						<li val="26_3_5">
+							4-6
+						</li>
+						<li val="26_3_8">
+							7-9
+						</li>
+					</ul>
+				</div>
+				<div class="xs">
+					2.88
+				</div>
+			</div>
+			<div class="clear20">
+			</div>
+			<div class="list">
+				<div class="box4">
+					<ul class="ul10">
+						<li val="26_10_1" class="on">
+							1
+						</li>
+						<li val="26_10_2">
+							2
+						</li>
+						<li val="26_10_3">
+							3
+						</li>
+						<li val="26_10_4">
+							4
+						</li>
+						<li val="26_10_5">
+							5
+						</li>
+						<li val="26_10_6">
+							6
+						</li>
+						<li val="26_10_7">
+							7
+						</li>
+						<li val="26_10_8">
+							8
+						</li>
+						<li val="26_10_9">
+							9
+						</li>
+						<li val="26_10_0">
+							0
+						</li>
+					</ul>
+				</div>
+				<div class="xs">
+					9.88
+				</div>
+			</div>
+			<div class="clear20">
+			</div>
+		</div>
+
+
+	</td>
+	<td style="TEXT-ALIGN: center;">6</td>
+	<td style="TEXT-ALIGN: center;" class="miss">-MISS-</td>
+</tr>
+
+				</tbody></table>
+			</td>
+		</tr>
+		<tr><td height="7" bgcolor="#003247"><img src="./images/contentBox_b_HL.gif"></td></tr>
+	</tbody></table>
+	<table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td height="1"></td></tr></tbody></table>
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+		<tbody><tr>
+			<td><img src="./images/contentBox_SD_l.gif"></td>
+			<td width="100%"><img src="./images/contentBox_SD_m.gif" width="100%" height="48"></td>
+			<td><img src="./images/contentBox_SD_r.gif"></td>
+		</tr>
+	</tbody></table>
+</td>
+<td width="222" align="right" valign="top">
+	<table border="0" cellspacing="0" cellpadding="0" width="216">
+		<tbody><tr>
+			<td width="216">
+				<div class="slider">
+					<div id="game_betslip" class="move" style="top: 0px; left: 0px; ">
+						<iframe id="FrameBetslip" name="FrameBetslip" marginheight="0" marginwidth="0" frameborder="0" width="216" src="betslip.htm" scrolling="no" allowtransparency="" style="height: 492px; ">
+						</iframe>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<script type="text/javascript" src="./js/fx_loadBetslipSlider.js"></script>
+<script type="text/javascript">
+<!--
+// Init the value of stored in cookie for user selected bet **********************************
+f_InitBetslipByStorageValue("1X2");
+// *******************************************************************************************
+//-->
+</script>
+<!-- 내용(컨텐츠) 끝 -->
+<!-- BOTTOM - 참고사이트 로그 및 카피라잇 -->
+<table border="0" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td height="10"></td></tr></tbody></table>
+<table border="0" cellspacing="0" cellpadding="0" align="center">
+<tbody><tr>
+<td style="padding-right:5px;"><img src="./images/footer_banner_afc_out.gif" border="0"></td>
+<td style="padding-right:5px;"><img src="./images/footer_banner_cl_out.gif" border="0"></td>
+<td style="padding-right:5px;"><img src="./images/footer_banner_el_out.gif" border="0"></td>
+<td style="padding-right:5px;"><img src="./images/footer_banner_fifa_out.gif" border="0"></td>
+<td style="padding-right:5px;"><img src="./images/footer_banner_mlb_out.gif" border="0"></td>
+<td style="padding-right:5px;"><img src="./images/footer_banner_nba_out.gif" border="0"></td>
+<td style="padding-right:5px;"><img src="./images/footer_banner_nfl_out.gif" border="0"></td>
+<td style="padding-right:5px;"><img src="./images/footer_banner_nhl_out.gif" border="0"></td>
+</tr>
+</tbody></table>        
+<table border="0" cellspacing="0" cellpadding="0" align="center">
+<tbody><tr><td height="25"></td></tr>
+<tr><td>ⓒ2008-2009 ubat. All right reserved.</td></tr>
+<tr><td height="25"></td></tr>
+</tbody></table>
+<!-- BOTTOM - 참고사이트 로그 및 카피라잇 끝 -->
+
+
+
+<embed bgsound="" src="./data/file/B_sound/2089230664_vdDp0LTM_ECAABDECA780.wma" autostart="true" hidden="true">
+<div style="position:absolute;width:100%;height:100%;background-color:#000000;top:0px;filter: alpha(opacity=70); -khtml-opacity: 0.7; -moz-opacity:0.7; opacity: 0.7;z-index:8;display:none;z-index:-998" align="center" id="tbanner_div" onclick="setTimeout(&#39;tbanner_clear()&#39;,500)"></div>
+<div style="position:absolute;top:0px;z-index:-999;color:#FFFFFF;width:100%;height:100%;display:none;" align="center" id="tbanner_div2" onclick="setTimeout(&#39;tbanner_clear()&#39;,500);">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%">
+<tbody><tr align="center">
+	<td><a href="http://www.ubat-ball.com/apk/ubatapp.apk" target="_blank"><img src="./images/android.jpg" border="0"></a></td>
+</tr>
+</tbody></table>
+<script type="text/javascript">
+<!--
+function tbanner_fun()
+{
+var f = document.getElementById("tbanner_div");
+var f2 = document.getElementById("tbanner_div2");
+f.style.display = "block";
+f2.style.display = "block";
+f.style.height = (document.all)?document.documentElement.scrollHeight:document.body.scrollHeight+'px';
+//f2.style.top = (document.all)?document.documentElement.scrollTop:document.body.scrollTop+'px';
+f2.style.top = '300px';
+f.style.zIndex = '900';
+f2.style.zIndex = '910';
+}
+function tbanner_clear()
+{
+var f = document.getElementById("tbanner_div");
+var f2 = document.getElementById("tbanner_div2");
+f.style.display = "none";
+f2.style.display = "none";
+f.style.zIndex = '-900';
+f2.style.zIndex = '-910';
+}
+//-->
+</script>
+
+
+</div></body></html>
