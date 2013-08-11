@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>서비스 점검중...</title>
+<STYLE type="text/css">
+<!--
+body {background:url(construction_bg.gif) top repeat-x #000;}
+td {color:#afafaf;font-size:12px;}
+// -->
+</STYLE>
+<script type=text/javascript> 
+var defaultCharset = document.charset ;
+function isIE(){ return /msie/i.test(navigator.userAgent) && !/opera/i.test(navigator.userAgent); }
+function setDefaultCharset() { document.charset = defaultCharset ; }
+function emulAcceptCharset(form) { if (isIE) { var defCharset = document.charset ; document.charset = form.acceptCharset ; window.onbeforeunload = setDefaultCharset ; } return true; }
+</script>
+</head>
+<body topmargin="0" leftmargin="0">
+	<table cellspacing=0 cellpadding=0 border=0 align="center" style="background:url(construction.jpg);width:491px;height:563px;">
+		<tr>
+			<td valign="bottom" style="padding-bottom:135px;">
+				<table cellspacing=0 cellpadding=0 border=0 width="332" align="center">
+					<tr>
+						<td width="55" style="padding-left:10px;padding-right:5px;">점검안내</td>
+						<td><!--u><b>7월 12일 00시 ~ 7월 12일 12시</b></u--></td>
+					</tr>
+					<tr><td height="10"></td></tr>
+					<tr>
+						<td width="55" valign="top" style="padding-left:10px;padding-right:5px;">점검내용</td>
+						<td>
+							<table cellspacing=0 cellpadding=0 border=0>
+								<tr>
+									<td valign="top" style="padding-right:5px;">01.</td>
+									<td>네트워크망 설치 및 시설 점검</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+ </body>
+</html>

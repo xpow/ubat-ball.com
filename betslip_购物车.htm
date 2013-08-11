@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0080)http://www.ubat-ball.com/_localoffice/iframe/betslip.htm?mode_=nonebet -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="Head1"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>제목 없음</title>
+
+<link rel="stylesheet" type="text/css" href="default.css" charset="euc-kr">
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="./js/fx_JScript.js"></script>
+<script type="text/javascript" src="./js/fx_common.js"></script>
+<script type="text/javascript" src="./js/fx_dhtml2.js"></script>
+<script type="text/javascript" src="./js/fx_betslip.js"></script>
+<script type="text/javascript">
+<!--
+var betslipMode = "none";
+var imgDirPath = "../images";
+var minStake =5000;                                       // 최소 베팅금액
+var maxStake = 1000000.0000;										// 최대 베팅금액
+var maxMultiProfit = 3000000.0000;									// 최대 적중배당금
+var FolderLimit = 0;                                                                                                                    // ?
+var maxStakeBigLeague =1000000;                              // 사용 안함
+var maxMultiProfitBigLeague = 0;   // 사용 안함
+var haveMoney = 43.1000;             // 보유자금
+var bigLeauges = new Array();
+
+var NOTIP = "<table width='100%' border='0' cellpadding='0' cellspacing='0'>";
+	NOTIP += "	<tr>";
+	NOTIP += "		<td style='padding:15px 15px 5px 15px;'>";
+	NOTIP += "			<table width='100%' border='0' cellpadding='0' cellspacing='0'>";
+	NOTIP += "				<tr>";
+	NOTIP += "					<td width='90' height='21' style='color:#bae9ff'>최소 베팅금액</td>";
+	NOTIP += "					<td height='21' align='right' style='color:#bae9ff'><span style='color:#ffffff;'>" + (minStake*0.001) + "</span> 천원</td>";
+	NOTIP += "				</tr>";
+	NOTIP += "				<tr>";
+	NOTIP += "					<td width='90' height='21' style='color:#bae9ff'>최대 베팅금액</td>";
+	NOTIP += "					<td height='21' align='right' style='color:#bae9ff'><span style='color:#ffffff;'>" + (maxStake*0.0001) + "</span> 만원</td>";
+	NOTIP += "				</tr>";
+	NOTIP += "				<tr>";
+	NOTIP += "					<td width='90' height='21' style='color:#bae9ff'>최대 적중금액</td>";
+	NOTIP += "					<td height='21' align='right' style='color:#bae9ff'><span style='color:#ffffff;'>" + (maxMultiProfit*0.0001) + "</span> 만원</td>";
+	NOTIP += "				</tr>";
+	NOTIP += "				<tr>";
+	NOTIP += "					<td width='90' height='21' style='color:#bae9ff'>최대 조합폴더</td>";
+	NOTIP += "					<td height='21' align='right' style='color:#bae9ff'><span style='color:#ffffff;'>제한없음</span></td>";
+	NOTIP += "				</tr>";
+	NOTIP += "			</table>";
+	NOTIP += "		</td>";
+	NOTIP += "	</tr>";
+	NOTIP += "</table>";
+	
+var cartItem = "<table width='187' border='0' cellpadding='0' cellspacing='0' style='padding-left:10px;padding-right:10px;'>";
+	cartItem += "	<tr>";
+	cartItem += "	    <td width='152' height='18' align='left' style='color:#97d8fd;'>#teamH</td>";
+	cartItem += "	    <td width='30' height='18' align='right' style='padding-left:5px;'><a tabindex='-1' href='javascript:f_deleteBetByIndex(#deleteIndex)'><img src='"+imgDirPath+"/cart_btn_item_remove.gif' width='12' height='12' border='0' /></a></td>";
+	cartItem += "	</tr>";
+	cartItem += "	<tr>";
+	cartItem += "	    <td width='152' height='18' align='left' style='color:#fea525;'>#teamA</td>";
+	cartItem += "	    <td width='22' height='18' align='right' style='color:#97d8fd;'>#odd</td>";
+	cartItem += "	</tr>";
+	cartItem += "	<tr><td height='3'></td></tr>";
+	cartItem += "	<tr><td height='1' colspan='2' bgcolor='#32719f'></td></tr>";
+	cartItem += "	<tr><td height='3'></td></tr>";
+	cartItem += "</table>";
+
+// line message process **********	
+wscroll = new NvScroll();
+wscroll.name = "wscroll";
+wscroll.height = 65;
+wscroll.width = 167;
+wscroll.scrollspeed = 1;
+wscroll.pausedelay = 3000;
+wscroll.pausemouseover = true;
+wscroll.add('◆회원님들의 성원에 보답하고자 회원등급제를 도입하여 우수 회원님에 대한 이용혜택을 드리고자 준비중에 있습니다. 자세한 사항은 고객센터에 문의하시기 바랍니다.');
+wscroll.add('◆회원님의 연락정보(이메일, 휴대전화)가 정확하지 아니할 경우, 긴급 상황정보를 알려드릴 수 없사오니 확인하여 주시기 바랍니다.');
+wscroll.add('◆베팅결과 문자서비스를 시행 중이오니, 문자서비스를 원하지 않는 회원님께서는 고객센테에 알려주시기 바랍니다.');
+wscroll.add('◆회원님들을 위한 안정된 서비스를 위하여 모든공지사항을 필독하여 주시기바랍니다.');
+// *******************************	
+
+function rankingTabChange(tab) {
+	if(tab=='forum') {
+		if(document.getElementById('frContentForum').style.display=="block") return;
+
+		document.getElementById('tabForum').src = "../images/ranking_cart_c_03_on.gif";
+		document.getElementById('tabComment').src = "../images/ranking_cart_c_04_off.gif";
+		document.getElementById('frContentForum').style.display = "block";
+		document.getElementById('frContentComment').style.display = "none";
+		
+	} else {
+		if(document.getElementById('frContentComment').style.display=="block") return;
+
+		document.getElementById('tabForum').src = "../images/ranking_cart_c_03_off.gif";
+		document.getElementById('tabComment').src = "../images/ranking_cart_c_04_on.gif";
+		document.getElementById('frContentForum').style.display = "none";
+		document.getElementById('frContentComment').style.display = "block";
+	}
+}
+//-->
+</script>
+<meta name="GENERATOR" content="MSHTML 8.00.6001.18939"></head>
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0" onload="renderBetslip();" style="background-color:transparent;" marginwidth="0" marginheight="0">
+<form id="form" class="layout" method="post" action="http://www.ubat-ball.com/_localoffice/_service/game_bet.asp" target="_parent">
+<!--
+아래 4개의 ID는 가져야 한다!!
+<input type="text" name="stakePerRow" value="0" />
+<div id="fK_Odd">
+적중배당률
+</div>
+<div id="profit">
+적중배당금
+</div>
+<div id="tipsWrapper">
+카트내용
+</div>
+-->
+<input type="hidden" name="mode" value="betting">
+<table border="0" cellspacing="0" cellpadding="0" width="216" style="DISPLAY:block">
+    <tbody><tr><td><img src="./images/cart_01.gif" width="216" height="21"></td></tr>
+    <tr>
+        <td>
+            <table border="0" cellspacing="0" cellpadding="0" align="center">
+                <tbody><tr>
+                    <td><img src="./images/cart_02.gif" width="88" height="18"></td>
+                    <td><a onclick="javascript:parent.LocationChange()" href="javascript:void(0)"><img id="imgBetlipPin" src="./images/cart_03.gif" width="114" height="18" border="0"></a></td>
+                    <td><img src="./images/cart_04.gif" width="14" height="18"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+    <tr><td><img src="./images/cart_05.gif" width="216" height="35"></td></tr>
+	<tr >
+		<td>
+			<table border="0" cellspacing="0" cellpadding="0" width="216">
+				<tbody><tr>
+					<td style="background:url(./images/cart_07.gif);">
+						<table border="0" cellspacing="0" cellpadding="0" width="216" style="background:url(./images/cart_06.gif) top no-repeat;">
+							<tbody><tr><td align="center" style="padding-top:15px;padding-bottom:5px;"><div id="tipsWrapper"><table width="183" border="0" cellspacing="0" cellpadding="0" class="slip"><tbody><tr><td align="center" class="notip"><table width="100%" border="0" cellpadding="0" cellspacing="0">	<tbody><tr>		<td style="padding:15px 15px 5px 15px;">			<table width="100%" border="0" cellpadding="0" cellspacing="0">				<tbody><tr>					<td width="90" height="21" style="color:#bae9ff">최소 베팅금액</td>					<td height="21" align="right" style="color:#bae9ff"><span style="color:#ffffff;">5</span> 천원</td>				</tr>				<tr>					<td width="90" height="21" style="color:#bae9ff">최대 베팅금액</td>					<td height="21" align="right" style="color:#bae9ff"><span style="color:#ffffff;">100</span> 만원</td>				</tr>				<tr>					<td width="90" height="21" style="color:#bae9ff">최대 적중금액</td>					<td height="21" align="right" style="color:#bae9ff"><span style="color:#ffffff;">300</span> 만원</td>				</tr>				<tr>					<td width="90" height="21" style="color:#bae9ff">최대 조합폴더</td>					<td height="21" align="right" style="color:#bae9ff"><span style="color:#ffffff;">제한없음</span></td>				</tr>			</tbody></table>		</td>	</tr></tbody></table></td></tr></tbody></table></div></td></tr>
+							<tr><td><img src="./images/cart_09.gif" width="216" height="5"></td></tr>
+							<tr><td><img src="./images/cart_10.gif" width="216" height="12"></td></tr>
+						</tbody></table>
+					</td>
+				</tr>
+				<tr><td><img src="./images/cart_11.gif" width="216" height="7"></td></tr>
+				<tr>
+					<td width="216" height="96" style="background:url(./images/cart_12.gif);padding-left:25px;padding-right:15px;">
+						<table style="WIDTH:100%" border="0" cellspacing="0" cellpadding="0">
+							<tbody>
+							<tr id="tr_OddVisible">
+								<td height="21" style="color:#bae9ff">적중배당률</td>
+								<td style="color:#bae9ff"><span id="fK_Odd" style="COLOR:#ffffff;">0</span> 배</td>
+							</tr>
+							<tr>
+								<td height="21" style="color:#bae9ff">베팅금액</td>
+								<td height="21" align="left">
+									<input id="stakePerRow" name="stakePerRow" onfocus="javascript:this.select();" onkeypress="javascript:if(event.keyCode==13)event.returnValue = false;" onkeyup="javascript:if(event.keyCode&gt;40 || event.keyCode&lt;33)f_setStakePerRow(this);" value="5,000" maxlength="15" style="width:70px;HEIGHT:19px;VERTICAL-ALIGN:middle;background:#ffffff;color:#000000;" autocomplete="off">
+								</td>
+							</tr>
+							<tr>
+								<td height="21" style="color:#bae9ff">적중배당금</td>
+								<td height="21" style="color:#bae9ff"><span id="profit" class="alert">0</span> 원</td>
+							</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				<tr><td><img src="./images/cart_13.gif" width="216" height="11"></td></tr>
+				<tr>
+					<td width="216">
+						<table border="0" cellspacing="0" cellpadding="0" width="216">
+							<tbody><tr>
+								<td><img src="./images/cart_14.gif" width="10" height="28"></td>
+								<td><img src="./images/cart_15.gif" width="127" height="28" border="0" style="cursor:pointer" onclick="f_removeBetStorage(currentBetType)"></td>
+								<td><img src="./images/cart_16.gif" width="17" height="28"></td>
+								<td><a onclick="javascript:return f_BetForward(&#39;bet&#39;);" href="javascript:void(0)"><img src="./images/cart_17.gif" width="54" height="28" border="0"></a></td>
+								<td><img src="./images/cart_18.gif" width="8" height="28"></td>
+							</tr>
+						</tbody></table>
+					</td>
+				</tr>
+				<tr><td><img src="./images/cart_19.gif" width="216" height="3"></td></tr>
+			</tbody></table>
+		</td>
+	</tr>
+    <tr style="DISPLAY:block"><td><img src="./images/cart_10.gif" width="216" height="12"></td></tr>
+    <tr>
+		<td width="216" height="185" valign="top" style="background:url(./images/cart_20.gif)">
+			<table border="0" cellspacing="0" cellpadding="0" width="216">
+				<tbody><tr>
+					<td style="padding-top:35px;">
+						<table border="0" cellspacing="0" cellpadding="0" align="center" class="partner_box">
+							<tbody><tr><td><a href="http://www.ubat-ball.com/_localoffice/_program/link.php?bo_table=B_Banner&wr_id=46&no=1" target="_blank"><img src="./images/3420039693_W1wdlgMf_Banner.gif" width="186" height="135" border="0"></a></td></tr>
+						</tbody></table>        
+					</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+<div style="padding-top:3px;"><a href="http://www.ubat-ball.com/_localoffice/iframe/betslip.htm?mode_=nonebet#" onclick="parent.location.href=parent.location.href+&#39;#&#39;;"><img src="./images/android_right.jpg" border="0" style="cursor:pointer;" onclick="parent.tbanner_fun();"></a></div>
+<input id="betDirect" name="betDirect" type="hidden">
+<input id="betslipContent" name="betslipContent" type="hidden" value="">
+<input id="betType" name="betType" value="com" type="hidden">
+</form>
+<script type="text/javascript">
+<!--
+if(betslipMode=="block") {
+	f_initStorageData();
+}
+//-->
+</script>
+
+
+</body></html>
