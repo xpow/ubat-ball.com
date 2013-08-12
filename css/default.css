@@ -42,6 +42,13 @@ a.orange:visited {color:#fe8b2e;}
 a.orange:active {color:#fe8b2e;}
 a.orange:hover {color:#fee4cf;}
 
+.clear {clear:both; overflow:hidden;}
+.clear10 {clear:both; height:10px; overflow:hidden;}
+.clear20 {clear:both; overflow:hidden;}
+.miss {CURSOR:default; color:red; text-align:right}
+.winner {CURSOR:default; color:green; text-align:right}
+
+
 DIV.slider {POSITION: relative; WIDTH: 100%; HEIGHT: 100%; VERTICAL-ALIGN: top;}
 DIV.slider DIV.move {POSITION: absolute; BORDER-RIGHT-WIDTH: 2px; BORDER-TOP-WIDTH: 2px; BORDER-BOTTOM-WIDTH: 2px; BORDER-LEFT-WIDTH: 2px;}
 DIV.slider DIV.stop {POSITION: static; BORDER-RIGHT-WIDTH: 2px; BORDER-TOP-WIDTH: 2px; BORDER-BOTTOM-WIDTH: 2px; BORDER-LEFT-WIDTH: 2px;}
@@ -66,9 +73,6 @@ DIV.slider DIV.stop {POSITION: static; BORDER-RIGHT-WIDTH: 2px; BORDER-TOP-WIDTH
 .gameBox2 .item2 .list .box4 .ul10 li{width:26px; _width:28px} /*28*/
 .gameBox2 .item2 .list .xs{ float:left; width:98px; text-align:center;background:#0A3E65;border-bottom:#064069 1px solid; border-right:#064069 1px solid;border-top:#5C9BC8 1px solid; border-left:#5C9BC8 1px solid;}
 .gameBox2 .item2 .list .rel{ float:left; width:98px; text-align:center;background:#0A3E65;border-bottom:#064069 1px solid; border-right:#064069 1px solid;border-top:#5C9BC8 1px solid; border-left:#5C9BC8 1px solid; color:#fff;}
-.clear{ clear:both; overflow:hidden;}
-.clear10{ clear:both; height:10px; overflow:hidden;}
-.clear20{ clear:both; overflow:hidden;}
 
 .clock_container {}
 .clock_container td {font-size:10px;text-align:center;}
@@ -122,8 +126,6 @@ TABLE.gameCurrentList TR.disabled1 TD TABLE.teamName {width:100%;}
 TABLE.gameCurrentList TR.disabled1 TD TABLE.teamName TD {border:none;}
 TABLE.gameCurrentList TR.disabled1 TD TABLE.normal {width:100%;}
 TABLE.gameCurrentList TR.disabled1 TD TABLE.normal TD {border:none;}
-TABLE.gameCurrentList TR.disabled1 TD.miss {CURSOR:default;  color : red}
-TABLE.gameCurrentList TR.disabled1 TD.winner {CURSOR:default;  color : green}
 
 TABLE.gameCurrentList TR.row1 TD {padding:1px;}
 TABLE.gameCurrentList TR.row1 TD TABLE.normal {width:100%;}
