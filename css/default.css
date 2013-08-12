@@ -51,21 +51,22 @@ DIV.slider DIV.stop {POSITION: static; BORDER-RIGHT-WIDTH: 2px; BORDER-TOP-WIDTH
 .gameBox2 .item2 .tit .time{ float:left; width:532px; text-indent:20px; color:#FFA800; font-weight:bold;}
 .gameBox2 .item2 .tit .time2{ float:left; width:200px; color:#3298E0; padding-right:20px; line-height:30px; text-align:right;}
 .gameBox2 .item2 .line{ border-bottom:#002F53 1px solid; height:1px; overflow:hidden;}
-.gameBox2 .item2 .list{ color:#3298E0;}
+.gameBox2 .item2 .list{ color:#3298E0; width: 422px; margin-bottom:2px;}
 .gameBox2 .item2 .list .tit4{ float:left; width:98px; text-align:center;}
-.gameBox2 .item2 .list .box4{float:left; width:320px; margin-left:4px;}
+.gameBox2 .item2 .list .box4{float:left; margin-left:4px}
 .gameBox2 .item2 .list .box4 ul{ text-align:center;}
 .gameBox2 .item2 .list .box4 ul li{ float:left; background:#0A69AD; margin-right:2px; margin-bottom:2px; border-bottom:#064069 1px solid; border-right:#064069 1px solid;border-top:#5C9BC8 1px solid; border-left:#5C9BC8 1px solid; color:#fff;}
 .gameBox2 .item2 .list .box4 ul .on{background:#0A3E65; border-top:#5C9BC8 1px solid; border-left:#5C9BC8 1px solid; color:#ff7700;}
 .gameBox2 .item2 .list .box4 ul .on2{background:#0A3E65; border-top:#5C9BC8 1px solid; border-left:#5C9BC8 1px solid;}
 .gameBox2 .item2 .list .box4 .ul2{}
-.gameBox2 .item2 .list .box4 .ul2 li{width:146px;}
+.gameBox2 .item2 .list .box4 .ul2 li{width:146px; _width:148px} /*148*/
 .gameBox2 .item2 .list .box4 .ul3{}
-.gameBox2 .item2 .list .box4 .ul3 li{width:96px;}
+.gameBox2 .item2 .list .box4 .ul3 li{width:96px; _width:98px} /*98*/
 .gameBox2 .item2 .list .box4 .ul10{}
-.gameBox2 .item2 .list .box4 .ul10 li{width:26px;}
+.gameBox2 .item2 .list .box4 .ul10 li{width:26px; _width:28px} /*28*/
 .gameBox2 .item2 .list .xs{ float:left; width:98px; text-align:center;background:#0A3E65;border-bottom:#064069 1px solid; border-right:#064069 1px solid;border-top:#5C9BC8 1px solid; border-left:#5C9BC8 1px solid;}
 .gameBox2 .item2 .list .rel{ float:left; width:98px; text-align:center;background:#0A3E65;border-bottom:#064069 1px solid; border-right:#064069 1px solid;border-top:#5C9BC8 1px solid; border-left:#5C9BC8 1px solid; color:#fff;}
+.clear{ clear:both; overflow:hidden;}
 .clear10{ clear:both; height:10px; overflow:hidden;}
 .clear20{ clear:both; overflow:hidden;}
 

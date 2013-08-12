@@ -1,21 +1,115 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
 <title></title>
-<script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script language="javascript">
+<!--
+	// 자바스크립트에서 사용하는 전역변수 선언
+	var g4_path      = "..";
+	var g4_bbs       = "_program";
+	var g4_bbs_img   = "img";
+	var g4_url       = "http://www.ubat-ball.com";
+	var g4_is_member = "1";
+	var g4_is_admin  = "";
+	var g4_bo_table  = "";
+	var g4_sca       = "";
+	var g4_charset   = "utf-8";
+	var g4_cookie_domain = "";
+	var g4_is_gecko  = navigator.userAgent.toLowerCase().indexOf("gecko") != -1;
+	var g4_is_ie     = navigator.userAgent.toLowerCase().indexOf("msie") != -1;
+	
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-24700552-1']);
+	_gaq.push(['_setDomainName', 'mlb-oh.com']);
+	_gaq.push(['_setAllowHash', 'false']);
+	_gaq.push(['_setAllowLinker', true]);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+// -->
+</script>
+<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
 </head>
 
-<body topmargin="0" bgcolor="#000000">
-<link rel="stylesheet" type="text/css" href="./css/default.css">
+						<body topmargin="0" leftmargin="0" oncontextmenu="return false" ondragstart="return false" onselectstart="return false" bgcolor="#000000">
+			
+<link rel="stylesheet" type="text/css" href="../css/happy2012/default.css">
 <style type="text/css">
 <!--
-body {background:url(./images/background_main.gif) #000000 repeat-x;}
+body {background:url(../images/happy2012/background_main.gif) #000000 repeat-x;}
 -->
 </style>
 <script type="text/javascript">
 <!--
-var imgCommonDirPath = "./images/";
+var imgCommonDirPath = "../images/happy2012/";
 var topMargin = 115;
 
+function MM_swapImgRestore(bool) { //v3.0
+	if(bool) {
+		return;
+	}
+	var i,x,a=document.MM_sr;
+	for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+	var d=document;
+	if(d.images)  {
+	   if(!d.MM_p) d.MM_p=new Array();
+		var i,j=d.MM_p.length,a=MM_preloadImages.arguments;
+		for(i=0; i<a.length; i++)
+			if (a[i].indexOf("#")!=0) d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];
+	}
+}
+function MM_findObj(n, d) { //v4.01
+	var p,i,x;
+	if(!d) d=document;
+	if((p=n.indexOf("?"))>0&&parent.frames.length) {
+		d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);
+	}
+	if(!(x=d[n])&&d.all) x=d.all[n];
+	for (i=0;!x&&i<d.forms.length;i++)
+		x=d.forms[i][n];
+	for(i=0;!x&&d.layers&&i<d.layers.length;i++)
+		x=MM_findObj(n,d.layers[i].document);
+	if(!x && d.getElementById)
+		x=d.getElementById(n);
+	return x;
+}
+function MM_swapImage() { //v3.0
+	var i,j=0,x,a=MM_swapImage.arguments;
+	document.MM_sr=new Array;
+	for(i=0;i<(a.length-2);i+=3) {
+		if ((x=MM_findObj(a[i]))!=null) {
+			document.MM_sr[j++]=x;
+			if(!x.oSrc)
+				x.oSrc=x.src;
+			x.src=a[i+2];
+		}
+	}
+}
+function MM_swapBgImageRestore(bool) { //v3.0
+	if(bool) return;
+	//alert("MM_swapBgImageRestore x.oBackground="+x.oBackground);
+	var i,x,a=document.MM_sr;
+	for(i=0;a&&i<a.length&&(x=a[i])&&x.oBackground;i++) x.style.backgroundImage=x.oBackground;
+}
+function MM_swapBgImage() { //v3.0
+	var i,j=0,x,a=MM_swapBgImage.arguments;
+	document.MM_sr=new Array;
+	for(i=0;i<(a.length-2);i+=3) {
+		if ((x=MM_findObj(a[i]))!=null) {
+			document.MM_sr[j++]=x;
+			if(!x.oBackground) x.oBackground=x.style.backgroundImage;
+			//alert("MM_swapBgImageRestore x.style.backgroundImage="+x.style.backgroundImage);
+
+			x.src=a[i+2];
+		}
+	}
+}
 function addOnFavorite() {
 	if (navigator.appName == "Microsoft Internet Explorer") {
 		window.external.AddFavorite('http://www.ubat-ball.com', 'ubat');
@@ -31,46 +125,73 @@ function setToHome() {
 }
 // -->
 </script>
-<script type="text/javascript" src="./js/fx_JScript.js"></script>
-<script type="text/javascript" src="./js/fx_dsClock.js"></script>
-
+<script type="text/javascript" src="../js/fx_JScript.js"></script>
+<script type="text/javascript" src="../js/fx_dsClock.js"></script>
+<!-- 시작페이지 및 회원정보등의 메뉴 -->
+<table border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#000000">
+	<tbody><tr>
+    	<td width="100%">
+            <table border="0" cellspacing="0" cellpadding="0" width="989" align="center">
+                <tbody><tr>
+                    <td style="padding-right:3px;height:24px;">
+                    	<a href="javascript:setToHome();">시작페이지로 설정</a>
+						| <a href="javascript:addOnFavorite();">즐겨찾기에 추가</a>
+						                    </td>
+                    <td align="right">
+                        <table border="0" cellspacing="0" cellpadding="0" align="right">
+                            <tbody><tr>
+                                <td>
+									                                    <a href="../_service/info.asp?category=2">핸디캡의 이해</a> |
+                                    <a href="../_service/info.asp?category=1">베팅규정</a> |
+                                    <a href="../_service/lsinfo.asp?type=1">라이브스코어</a> |
+                                    <a href="../_service/myaccount.asp" class="white">회원정보</a> |
+                                    <a href="../_service/logout.asp" class="white">로그아웃</a>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+<!-- 시작페이지 및 회원정보등의 메뉴 끝-->
+<!-- 로고, 시계 및 메인 메뉴 -->
 <table border="0" cellspacing="0" cellpadding="0" width="989" align="center">
 	<tbody><tr>
     	<td style="padding-top:10px;">
             <table border="0" cellspacing="0" cellpadding="0" width="989" align="center">
                 <tbody><tr>
-                	<td rowspan="2"><a href="http://www.ubat-ball.com/_localoffice/"><img src="./images/ubat-ball.com.logo.png" border="0"></a></td>
+                	<td rowspan="2"><a href=".."><img src="../data/file/LogosNetc/ubat-ball.com.logo.png" border="0"></a></td>
                     <td>
-
+                    	<!-- 회원아이디, 보유머니등 주 정보 표시 -->
                         <table border="0" cellspacing="0" cellpadding="0" align="center">
                             <tbody><tr>
-                                <td><img src="./images/top_sub_menu_bg_left.png" border="0"></td>
+                                <td><img src="../images/happy2012/top_sub_menu_bg_left.png" border="0"></td>
                                 <td bgcolor="#2060a2">
                                     <table border="0" cellspacing="0" cellpadding="0">
                                         <tbody><tr>
-											<td><a href="http://www.ubat-ball.com/_localoffice/_service/myaccount.asp"><img src="./images/2106947535_zxUStDd0_icon_level_2.png" width="16" height="16" border="0" alt="陈瑞鹏"></a></td>
-                                            <td style="padding-top:2px;color:#74badc;"><a href="./myaccount.asp#" class="blue">陈瑞鹏</a> 祝您玩的开心^^!</td><td>
-											</td>
-											<td style="padding-left:7px;"><a href="http://www.ubat-ball.com/_localoffice/main.asp#"><img src="./images/icon_money.gif" border="0"></a></td>
-                                            <td style="padding-top:2px;"><a href="http://www.ubat-ball.com/_localoffice/main.asp#" class="blue">我的金币:</a> <a href="http://www.ubat-ball.com/_localoffice/main.asp#" class="orange">40元</a></td><td>
-                                            </td>
-											<td style="padding-left:7px;"><a href="http://www.ubat-ball.com/_localoffice/_service/message.asp"><img src="./images/icon_memo.gif" border="0"></a></td>
-                                            <td style="padding-top:2px;"><a href="./message.html" class="blue">留言 78</a></td><td>
-											</td><td style="padding-left:7px;"><a href="http://www.ubat-ball.com/_localoffice/_service/betinfo.asp"><img src="./images/icon_result.gif" border="0"></a></td>
-                                            <td style="padding-top:2px;"><a href="./message.html" class="blue">给管理员发留言</a></td><td>
-											</td><td></td>
-											<td style="padding-left:7px; padding-top:2px;"><a href="./logout.asp#" class="white">安全退出</a></td><td>
-											</td></tr>
+											<td><a href="../_service/myaccount.asp"><img src="../data/file/Level/2106947535_zxUStDd0_icon_level_2.png" width="16" height="16" border="0" alt="회원정보"></a></td>
+                                            <td style="padding-top:2px;color:#74badc;"><a href="../_service/myaccount.asp" class="blue">카르샤님</a> 좋은시간 되세요^^!</td><td>
+											</td><td style="padding-left:7px;"><a href="#"><img src="../images/happy2012/icon_money.gif" border="0"></a></td>
+                                            <td style="padding-top:2px;"><a href="#" class="blue">보유머니:</a> <a href="#" class="orange">40원</a></td><td>
+                                            </td><td style="padding-left:7px;"><a href="../_service/myaccount.asp?pagetype=4"><img src="../images/happy2012/icon_point.gif" border="0"></a></td>
+                                            <td style="padding-top:2px;"><a href="../_service/myaccount.asp?pagetype=4" class="blue">포인트:</a> <a href="../_service/myaccount.asp?pagetype=4" class="orange">3,120 Pt.</a></td><td>
+                                            </td><td style="padding-left:7px;"><a href="../_service/message.asp"><img src="../images/happy2012/icon_memo.gif" border="0"></a></td>
+                                            <td style="padding-top:2px;"><a href="../_service/message.asp" class="blue">쪽지 80통</a></td><td>
+											</td><td style="padding-left:7px;"><a href="../_service/betinfo.asp"><img src="../images/happy2012/icon_result.gif" border="0"></a></td>
+                                            <td style="padding-top:2px;"><a href="../_service/betinfo.asp" class="blue">베팅내역</a></td><td>
+                                        </td></tr>
                                     </tbody></table>
                                 </td>
-                                <td><img src="./images/top_sub_menu_bg_right.png" border="0"></td>
+                                <td><img src="../images/happy2012/top_sub_menu_bg_right.png" border="0"></td>
                             </tr>
                         </tbody></table>
-
+                        <!-- 회원아이디, 보유머니등 주 정보 표시 끝 -->
 					</td>
                 	<td rowspan="2" style="padding-top:9px;">
-
-                    	<table border="0" cellspacing="0" cellpadding="0" align="right" style="background:url(./images/happy2012/clock_container.gif)">
+                		<!-- 시계 -->
+                    	<table border="0" cellspacing="0" cellpadding="0" align="right" style="background:url(../images/happy2012/clock_container.gif)">
                         	<tbody><tr>
                             	<td width="218" height="72" valign="top">
                                     <table border="0" cellspacing="0" cellpadding="0" align="center">
@@ -82,12 +203,12 @@ function setToHome() {
                                                         <td>
                                                             <table id="datetimeContainer" border="0" cellspacing="0" cellpadding="0" class="clock_container">
                                                                 <tbody><tr>
-                                                                    <td id="timeName0" width="25" class="selected">오전</td>
-                                                                    <td id="timeName1" width="25">오후</td>
+                                                                    <td id="timeName0" width="25">오전</td>
+                                                                    <td id="timeName1" width="25" class="selected">오후</td>
                                                                     <td width="15"></td>
-                                                                    <td id="weekName1" width="16">월</td>
+                                                                    <td id="weekName1" width="16" class="selected">월</td>
                                                                     <td id="weekName2" width="16">화</td>
-                                                                    <td id="weekName3" width="16" class="selected">수</td>
+                                                                    <td id="weekName3" width="16">수</td>
                                                                     <td id="weekName4" width="16">목</td>
                                                                     <td id="weekName5" width="16">금</td>
                                                                     <td id="weekName6" width="16">토</td>
@@ -95,16 +216,16 @@ function setToHome() {
                                                                 </tr>
                                                                 <tr><td height="2"></td></tr>
                                                                 <tr>
-                                                                    <td><img id="timeCheck0" src="./images/clock_current_on.png" width="6" height="7"></td>
-                                                                    <td><img id="timeCheck1" src="./images/clock_current_off.png" width="6" height="7"></td>
+                                                                    <td><img id="timeCheck0" src="../images/happy2012/clock_current_off.png" width="6" height="7"></td>
+                                                                    <td><img id="timeCheck1" src="../images/happy2012/clock_current_on.png" width="6" height="7"></td>
                                                                     <td></td>
-                                                                    <td><img id="weekCheck1" src="./images/clock_current_off.png" width="6" height="7"></td>
-                                                                    <td><img id="weekCheck2" src="./images/clock_current_off.png" width="6" height="7"></td>
-                                                                    <td><img id="weekCheck3" src="./images/clock_current_on.png" width="6" height="7"></td>
-                                                                    <td><img id="weekCheck4" src="./images/clock_current_off.png" width="6" height="7"></td>
-                                                                    <td><img id="weekCheck5" src="./images/clock_current_off.png" width="6" height="7"></td>
-                                                                    <td><img id="weekCheck6" src="./images/clock_current_off.png" width="6" height="7"></td>
-                                                                    <td><img id="weekCheck0" src="./images/clock_current_off.png" width="6" height="7"></td>
+                                                                    <td><img id="weekCheck1" src="../images/happy2012/clock_current_on.png" width="6" height="7"></td>
+                                                                    <td><img id="weekCheck2" src="../images/happy2012/clock_current_off.png" width="6" height="7"></td>
+                                                                    <td><img id="weekCheck3" src="../images/happy2012/clock_current_off.png" width="6" height="7"></td>
+                                                                    <td><img id="weekCheck4" src="../images/happy2012/clock_current_off.png" width="6" height="7"></td>
+                                                                    <td><img id="weekCheck5" src="../images/happy2012/clock_current_off.png" width="6" height="7"></td>
+                                                                    <td><img id="weekCheck6" src="../images/happy2012/clock_current_off.png" width="6" height="7"></td>
+                                                                    <td><img id="weekCheck0" src="../images/happy2012/clock_current_off.png" width="6" height="7"></td>
                                                                 </tr>
                                                             </tbody></table>
                                                         </td>
@@ -114,12 +235,12 @@ function setToHome() {
                                                         <td>
                                                             <table border="0" cellspacing="0" cellpadding="0">
                                                                 <tbody><tr>
-                                                                    <td id="dateName" width="76" style="font-size:12px;">08월 07일</td>
-                                                                    <td><img id="timeHour1" src="./images/clock_dg_1.gif" width="11" height="16"><img id="timeHour2" src="./images/clock_dg_0.gif" width="11" height="16"></td>
+                                                                    <td id="dateName" width="76" style="font-size:12px;">08월 12일</td>
+                                                                    <td><img id="timeHour1" src="../images/happy2012/clock_dg_2.gif" width="11" height="16"><img id="timeHour2" src="../images/happy2012/clock_dg_0.gif" width="11" height="16"></td>
                                                                     <td width="16"></td>
-                                                                    <td><img id="timeMin1" src="./images/clock_dg_2.gif" width="11" height="16"><img id="timeMin2" src="./images/clock_dg_0.gif" width="11" height="16"></td>
+                                                                    <td><img id="timeMin1" src="../images/happy2012/clock_dg_4.gif" width="11" height="16"><img id="timeMin2" src="../images/happy2012/clock_dg_2.gif" width="11" height="16"></td>
                                                                     <td width="17"></td>
-                                                                    <td><img id="timeSec1" src="./images/clock_dg_5.gif" width="11" height="16"><img id="timeSec2" src="./images/clock_dg_0.gif" width="11" height="16"></td>
+                                                                    <td><img id="timeSec1" src="../images/happy2012/clock_dg_5.gif" width="11" height="16"><img id="timeSec2" src="../images/happy2012/clock_dg_8.gif" width="11" height="16"></td>
                                                                 </tr>
                                                             </tbody></table>
                                                         </td>
@@ -136,155 +257,661 @@ function setToHome() {
 				</tr>
                 <tr>
                     <td>
-                    	<!-- 菜单 -->
-                        <table border="0" class="mainmenu" cellspacing="0" cellpadding="0" align="center">
+                    	<!-- 메인 메뉴 -->
+                        <table border="0" cellspacing="0" cellpadding="0" align="center">
                             <tbody><tr>
-								<td><a href="./games.html">比赛</a></td>
-                                <td style="padding-left:15px;padding-right:15px;"><img src="./images/main_partition.gif" width="3" height="18"></td>
-								<td><a href="./games_over.html">比赛结果</a></td>
-                                <td style="padding-left:15px;padding-right:15px;"><img src="./images/main_partition.gif" width="3" height="18"></td>
-								<td><a href="./recharge.html">充值</a></td>
-                                <td style="padding-left:15px;padding-right:15px;"><img src="./images/main_partition.gif" width="3" height="18"></td>
-								<td><a href="./refund.html">提现</a></td>
-                                <td style="padding-left:15px;padding-right:15px;"><img src="./images/main_partition.gif" width="3" height="18"></td>
-								<td><a href="./game_intro.html">游戏介绍</a></td>
-                                <td style="padding-left:15px;padding-right:15px;"><img src="./images/main_partition.gif" width="3" height="18"></td>
-								<td><a href="./active.html">活动</a></td>
-                              
+								<td><a onmouseover="MM_swapImage('mmIMGItem01','','../images/happy2012/menu_wdl_on.gif',0)" onmouseout="MM_swapImgRestore(false)" href="../_service/game.asp?bet_type=1"><img id="mmIMGItem01" name="mmIMGItem01" src="../images/happy2012/menu_wdl_out.gif" width="41" height="18" border="0"></a></td>
+                                <td style="padding-left:15px;padding-right:15px;"><img src="../images/happy2012/main_partition.gif" width="3" height="18"></td>
+                                <td><a onmouseover="MM_swapImage('mmIMGItem02','','../images/happy2012/menu_handi_on.gif',0)" onmouseout="MM_swapImgRestore(false)" href="../_service/game.asp?bet_type=2"><img id="mmIMGItem02" name="mmIMGItem02" src="../images/happy2012/menu_handi_out.gif" width="41" height="18" border="0"></a></td>
+                                <td style="padding-left:15px;padding-right:15px;"><img src="../images/happy2012/main_partition.gif" width="3" height="18"></td>
+                                <td><a onmouseover="MM_swapImage('mmIMGItem03','','../images/happy2012/menu_special_on.gif',0)" onmouseout="MM_swapImgRestore(false)" href="../_service/game.asp?bet_type=3"><img id="mmIMGItem03" name="mmIMGItem03" src="../images/happy2012/menu_special_out.gif" width="40" height="18" border="0"></a></td>
+                                <td style="padding-left:15px;padding-right:15px;"><img src="../images/happy2012/main_partition.gif" width="3" height="18"></td>
+                                <td><a onmouseover="MM_swapImage('mmIMGItem04','','../images/happy2012/menu_event_on.gif',0)" onmouseout="MM_swapImgRestore(false)" href="../_service/game.asp?category=2&amp;bet_type=1"><img id="mmIMGItem04" name="mmIMGItem04" src="../images/happy2012/menu_event_out.gif" width="42" height="18" border="0"></a></td>
+                                <td style="padding-left:15px;padding-right:15px;"><img src="../images/happy2012/main_partition.gif" width="3" height="18"></td>
+                                <td><a onmouseover="MM_swapImage('mmIMGItem05','','../images/happy2012/menu_result_on.gif',0)" onmouseout="MM_swapImgRestore(false)" href="../_service/game.asp?state=종료&amp;bet_type=1"><img id="mmIMGItem05" name="mmIMGItem05" src="../images/happy2012/menu_result_out.gif" width="55" height="18" border="0"></a></td>
+                                <td style="padding-left:15px;padding-right:15px;"><img src="../images/happy2012/main_partition.gif" width="3" height="18"></td>
+                                <td><a onmouseover="MM_swapImage('mmIMGItem06','','../images/happy2012/menu_charge_on.gif',0)" onmouseout="MM_swapImgRestore(false)" href="../_service/defund.asp?name=deposit"><img id="mmIMGItem06" name="mmIMGItem06" src="../images/happy2012/menu_charge_out.gif" width="31" height="18" border="0"></a></td>
+                                <td style="padding-left:15px;padding-right:15px;"><img src="../images/happy2012/main_partition.gif" width="3" height="18"></td>
+                                <td><a onmouseover="MM_swapImage('mmIMGItem07','','../images/happy2012/menu_exc_on.gif',0)" onmouseout="MM_swapImgRestore(false)" href="../_service/defund.asp?name=refund"><img id="mmIMGItem07" name="mmIMGItem07" src="../images/happy2012/menu_exc_out.gif" width="30" height="18" border="0"></a></td>
+                                <td style="padding-left:15px;padding-right:15px;"><img src="../images/happy2012/main_partition.gif" width="3" height="18"></td>
+                                <td><a onmouseover="MM_swapImage('mmIMGItem08','','../images/happy2012/menu_board_on.gif',0)" onmouseout="MM_swapImgRestore(false)" href="../_program/board.php?bo_table=c_freeboard"><img id="mmIMGItem08" name="mmIMGItem08" src="http://www.ubat-ball.com/_localoffice/images/happy2012/menu_board_out.gif" width="43" height="18" border="0"></a></td>
+                                <td style="padding-left:15px;padding-right:15px;"><img src="../images/happy2012/main_partition.gif" width="3" height="18"></td>
+                                <td><a onmouseover="MM_swapImage('mmIMGItem09','','../images/happy2012/menu_customer_on.gif',0)" onmouseout="MM_swapImgRestore(false)" href="../_program/board.php?bo_table=c_call_center"><img id="mmIMGItem09" name="mmIMGItem09" src="../images/happy2012/menu_customer_out.gif" width="54" height="18" border="0"></a></td>
                             </tr>
                         </tbody></table>
-                        <!-- 菜单结束 -->
+                        <!-- 메인 메뉴 끝 -->
 					</td>
 				</tr>
 			</tbody></table>
         </td>
 	</tr>
 </tbody></table>
-<!-- 头部结束 -->
-
-
+<!-- 로고, 시계 및 메인 메뉴 끝 -->
 <table border="0" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td height="10"></td></tr></tbody></table>
 <!-- 내용(컨텐츠) 시작 -->
 
-<script type="text/javascript" src="./js/fx_betlistaction.js"></script>
-<script type="text/javascript" src="./js/fx_dhtml2.js"></script>
-<script type="text/javascript" src="./js/fx_frame.js"></script>
-<script type="text/javascript" src="./js/fx_odd2.js"></script>
-<script type="text/javascript" src="./js/fx_slider.js"></script>
-<table border="0" cellspacing="0" cellpadding="0" width="989" align="center">
-<tbody><tr>
-<td valign="top" width="767">
-	<table border="0" cellspacing="0" cellpadding="0" width="100%" class="contentBox">
-		<tbody><tr><td height="7" bgcolor="#003247" align="center"><img src="./images/contentBox_b_HL.gif"></td></tr>
-		
-		<tr><td height="10"></td></tr>
-		<tr>
-			<td width="100%" height="516" valign="top" style="background:url(./images/contentBox_BG_t_r.gif) bottom right no-repeat;padding-left:3px;padding-right:3px">
-				<table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td height="3"></td></tr></tbody></table>
-				<!--正文内容-->
+<table border="0" cellspacing="0" cellpadding="0" width="989" align="center" class="contentBox">
+    <tbody><tr><td height="7" bgcolor="#003247" align="center"><img src="../images/happy2012/contentBox_b_HL.gif"></td></tr>
+    <tr>
+        <td width="100%" bgcolor="#000" style="padding:3px;">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                <tbody><tr>
+                    <td width="100%" height="63" style="background:url(../images/happy2012/t_betrule.gif) no-repeat;padding-right:15px;" valign="top">
+						<table border="0" cellspacing="0" cellpadding="0" width="100%">
+							<tbody><tr>
+								<td>
+									<table border="0" cellspacing="0" cellpadding="0" width="579" align="right">
+										<tbody><tr><td height="7"></td></tr>
+										<tr>
+																						<td style="background:url(../images/happy2012/marquee_canvas_bg.png) right no-repeat;padding-right:10px;" width="100%" height="24">
+												<table border="0" cellspacing="0" cellpadding="0" width="507" align="right">
+													<tbody><tr><td><marquee direction="left" scrolldelay="120" valign="middle" class="default">☆★ 입금계좌변경안내 ☆★
+
+금일 입금계좌 변경되었습니다
+
+입금계좌를 꼭! 확인하시고 입금해주시기 바랍니다
+
+변경전 계좌로 입금시 불이익을 초례하실수있으니 꼭! 입금 계좌 신청후 입금부탁드립니다
+
+감사합니다^^</marquee></td></tr>
+												</tbody></table>
+											</td>
+																					</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<tr><td height="10"></td></tr>
+							<tr>
+								<td style="height:24px;text-align:right;padding-right:10px;">
+								</td>
+							</tr>
+						</tbody></table>
+                    </td>
+                </tr>
+                <tr><td height="30"></td></tr>
+                <tr>
+                    <td width="100%" height="516" valign="top" style="background:url(../images/happy2012/contentBox_BG_t_r.gif) bottom right no-repeat;padding-left:25px;padding-right:25px">
+						<table border="0" cellspacing="0" cellpadding="0" width="100%">
+							<tbody><tr>
+								<td>
+									<table border="0" cellspacing="0" cellpadding="0" width="100%">
+										<tbody><tr>
+											<td><img src="../images/happy2012/br_sub_t_01.gif"></td>
+											<td width="100%"><img src="../images/happy2012/uh_info_box_t.gif" width="100%" height="30"></td>
+											<td><img src="../images/happy2012/uh_info_box_t_r.gif"></td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<tr>
+								<td style="border-left:solid #062b37 2px;border-right:solid #062b37 2px;padding:30px 45px 25px 45px">
+									<span class="title">1. 배팅 상한금 안내</span><br><br>
+
+<span class="warning">1회 최대 배팅 한도금액은</span>  <span class="info">백만원(1,000,000)</span><span class="warning">이며, 1회 배팅 최고 당첨금액은</span> <span class="info">삼백만원(3,000,000)</span><span class="warning">입니다.</span><br>
+<span class="warning">단,1회 단폴 배팅 한도금액은</span> <span class="info">칠십만원(700,000)</span>
+<span class="warning">입니다.</span><br>
+<span class="warning">1회 배팅 최대한도금 초과 시</span> 배팅금 전액이 환수 조치될 수 있음을 알려드립니다.<br>
+<span class="warning">1회 당첨 최고한도금 초과 시</span> <span class="info">삼백만원(3,000,000)</span>까지 지급되며 특례처리 및 환수 조치될 수 있습니다.<br>
+<br>
+* 베팅의 상한금은 각 회원의 등급(레벨)에 따라 다소 차이가 있을 수 있습니다.
+<br><br><br>
 
 
+<span class="title">2. 충전/환전 안내 </span><br><br>
+충전과 환전은 <span class="info">1만원이상 만원단위</span>로 가능하며 환전은 24시간 언제든지 요구하실 수 있습니다. <br>
+충전시 충전계좌를 꼭 확인하시고 충전해주시길 바랍니다. 충전계좌는 실시간으로 변동됩니다.<br>
+입출금 관련 계좌는 등록하신 계좌로만 가능하오니 유의하시길 바랍니다. <br>
+등록계좌 변경시엔 1:1 고객센터로 요청해주시면 본인 확인 후 변경하여 드립니다. <br>
+<br><br>
+ 
+
+<span class="title">3. 축배팅, 중복배팅, 중복ID, 중복IP에 관한 규정</span><br><br>
+
+<span class="warning">축배팅</span>  : 한폴이상의 경기를 축으로 축을 제외한 다른경기를 끼워 배팅하는경우<br>
+<span class="info">예)삼성+SK+두산(축) +기아<br>
+     삼성+SK+두산(축) +한화<br>
+     삼성+SK+두산(축) +LG<br></span>
+-이경우 당첨금이 당첨한도(300만원)를 넘을시 한도금액만 지급됩니다.<br>
+
+<span class="warning">중복베팅</span> : 금액, 폴더 수, 경기가 동일한 베팅내역은 중복 베팅처리됩니다.<br>
+(단 총 배팅 금액이 100만원을 초과하지 않고, 총 당첨금액이 300만원을 초과하지 않으면 그대로 인정합니다.)  <br>
+배팅한경기가 취소되어 남은배팅내역이 중복배팅으로 확인되면 중복배팅으로 인정되며 위의사항이 적용됩니다<br><br>
+
+<span class="warning">중복 ID, 중복 IP</span> : 중복으로 회원가입을 하여 동일 IP로 여러 개의 ID를 사용하는 경우와 중복 ID로 중복배팅을 하는 경우는 엄격히 규제합니다. <br>
+<span class="warning">위의 사항을 위반할 경우 보유머니 몰수 및 회원탈퇴 처리됩니다. <br>
+기타 세부적인 사항은 공지사항을 참고하시길 바랍니다. <br></span> 
+<br><br>
+ 
+ 
+<span class="title">4. 적중특례 기준</span><br><br>
+
+<span class="warning">언디사이드(Undecided)</span><span class="info">경기미확인</span> : 경기시작시간포함 3시간이 지나도 경기가 정상적으로 더이상 진행이 되지않을시 -적중특례(1.0)배- 처리됩니다. <br>
+<span class="warning">포스트폰드(Posponed)</span><span class="info">경기연기</span> : 경기시작시간포함 3시간이 지나도 경기가 정상적으로 더이상 진행이 되지않을시 -적중특례(1.0)배- 처리됩니다. 단, 경기연기가 확정된경우에는 바로 -적중특례(1.0)배- 처리됩니다. <br>
+<span class="warning">컷(CUT)</span><span class="info">경기중단,관중난동</span> :  경기시작시간포함 3시간이 지나도 경기가 정상적으로 더이상 진행이 되지않을시 -적중특례(1.0)배- 처리됩니다.<br>
+<span class="warning">퍼즈(PAUSE)</span><span class="info">경기정지</span> : 경기시작시간포함 3시간이 지나도 경기가 정상적으로 더이상 진행이 되지않을시 -적중특례(1.0)배- 처리됩니다.<br>
+<span class="warning"> 경기가 일찍시작한 경우</span> :  경기시작시간보다 일찍 시작한경우 변경된 시간이후로 배팅된 회원만  -적중특례(1.0)배-처리됩니다. 변경된 시간 이전에 배팅한 회원의 배팅은 정상적으로 진행처리되어 결과 반영됨.<br><br><br>
+ 
+
+<span class="title">5. 주의사항</span><br><br>
+
+경기결과 종료 후 5분이상 경과 후 결과점수가 배당팀의 오기(실수로 기록)가 아니고 해외 사이트의 실수 일 경우 정정된 결과로 재정산을 합니다. <br>
+[ 예 : 1 - 0 으로 결과가 나와 정산 처리했는데 1 - 2 로 재 조정됐을때 1 - 2 으로 인정합니다. ] <br><br>
+
+모든 경기에 대하여 해당 경기의 배당이 해외 배당 사이트나 타 사이트와 비교하여 차이가 너무 크거나,<br>
+상반될 경우 사전 고지 없이 해당 경기는 취소 처리 될수있으며, 배팅금은 환불처리 됩니다. <br>
+(위에 해당되는 경기를 악용하여 배팅할 경우 모든 배팅이 사전 고지없이 배팅취소 처리되며,<br>
+ 이로인해 발생되는 모든 불이익에 대해서는 책임지지 않습니다.)<br>
+공지된 배당률은 기타 여러 사항에 따라 사전통보 없이 변동 될 수 있습니다.<br>  
+배당률은 경기결과에 영향을 미칠 수 있는(주요선수 결장 및 부상) 여러가지 예기치 못한 변수에 의해서 변경되며,<br> 
+배당률이 변경될 경우 변경 시점 이전에 배팅은 변경 이전에 배당률로 그대로 적용 받게 됩니다. <br>
+경기의 결과에 영향을 미칠 수 있는 홈 또는 중립지역 표기가 잘못된 경우에는 적중특례 혹은 배팅 취소처리를 할수 있습니다. 단.라이브스코어에 의존할수밖에 없는 운영진에서 중립마크(N)가 경기시작 직전이나 경기시작후 생겨날시 적특사유가될수 없습니다.
+<br>
+모든 경기는 경기시작 1분전에 시스템상 배팅이 자동마감되오니 1분전에 배팅을 완료하여 주시길 바랍니다. <br> <br><br>
 
 
+<span class="title">6. 이벤트 참여기준</span><br><br>
+
+모든 이벤트는 이벤트마감 1주일전으로부터 1회이상 충전및배팅 내역이 있으신 회원에 한하여 이벤트 참여가 인정됩니다.<br> 
+실시하는 이벤트의 대상경기가 취소되거나 경기시간이 변경될경우 차후 공지로 대체합니다.<br>
+<br><br>
+
+<span class="title">7. 회원 준수사항</span><br><br>
+배팅규정과 게임 방법의 미숙지로 인한 불이익을 받지 않도록 숙지 하시길 바랍니다.<br>
+배팅이 완료된 게임은 취소 및 변경이 불가능 하오니, 배팅 전 신중하게 확인 하시고 배팅 하시길 바랍니다.<br>
+이용 규정을 위반하거나 정상적인 운영을 저해하는 행위를 하는등 악의적인 회원에 대해 언제든지 회원탈퇴 및 이용정지를 시킬 수 있는 권리가 있으며,<br>
+악의적인 회원의 보유머니는 경고없이 삭제 될수 있습니다.<br>
+<br><br>
+
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table border="0" cellspacing="0" cellpadding="0" width="100%">
+										<tbody><tr>
+											<td><img src="../images/happy2012/uh_info_box_b_l.gif"></td>
+											<td width="100%"><img src="../images/happy2012/uh_info_box_b.gif" width="100%" height="12"></td>
+											<td><img src="../images/happy2012/uh_info_box_b_r.gif"></td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+						</tbody></table>
+						<table border="0" cellspacing="0" cellpadding="0" height="30"><tbody><tr><td></td></tr></tbody></table>
+						<table border="0" cellspacing="0" cellpadding="0" width="100%">
+							<tbody><tr>
+								<td>
+									<table border="0" cellspacing="0" cellpadding="0" width="100%">
+										<tbody><tr>
+											<td><img src="../images/happy2012/br_sub_t_02.gif"></td>
+											<td width="100%"><img src="../images/happy2012/uh_info_box_t.gif" width="100%" height="30"></td>
+											<td><img src="../images/happy2012/uh_info_box_t_r.gif"></td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<tr>
+								<td style="border-left:solid #062b37 2px;border-right:solid #062b37 2px;padding:30px 45px 25px 45px">
+									<span class="title">1. 축구 (승, 무, 패)</span><br><br> 
+
+전/후반 90분 경기를 정규시간으로 기준으로 적용 (연장전 및 승부차기 제외) <br>
+*전반전(승, 무, 패) : 전반 45분 정규시간(전반전추가시간포함) <br>
+(전반전 결과마감 이후 다른 어떠한 기타사항으로 경기가 취소 또는 연기가 되더라도 결과는 그대로 반영이 됩니다.)
+<br><br> 
+
+ 
+<span class="title">2. 야구 (승, 패)</span><br><br> 
+
+승/패  &nbsp;&nbsp;:  1회초 ~ 9회말  정규이닝 (연장전 포함. 연장전 이후 무승부로 경기가 마감될 경우 1.0배(적중특례) 처리)<br>
+<br>
+** 정규 9이닝을 채우지 못한채 특이사항(우천, 자연재해 및 폭동 등)으로 인하여 경기가 중지된 경우 공식단체의 처리기준으로 반영이 됩니다.<br>
+(취소 혹은 경기 연기일때는 1.0배 처리 되며 정규이닝을 채우지 못했어도 승패를 나눌 경우 정상처리 됩니다.)<br> 
+** 무승부 종료시 승패 경기는 1.0배 처리 되며 핸디캡 경기는 핸디를 감안 정상처리 됩니다.<br> 
+<br><br> 
+ 
+<span class="title">3. 농구</span><br><br> 
+
+1~4쿼터를 정규시간으로 하며, 연장전 포함 <br> 
+<br><br> 
+
+ 
+<span class="title">4. 배구</span><br><br>
+
+정규세트(세트스코어는 주최측 규정에 의함) <br>
+<br><br>
+
+ 
+<span class="title">5. 아이스하키</span><br><br>
+
+1~3 period를 정규시간으로 하며 연장전과 승부치기는 포함 하지않음. <br>
+<br><br>
+
+<span class="title">6.  테니스</span><br><br>
+
+  세트스코어를 기준으로 승패를 정함- 세트스코어는 주최측의 규정에 의함 <br>
+* 경기 진행중 상대선수가 기권시 부전승을 했을 경우 적중특례처리되어 집니다 <br>
+* 경기 시작전에 상대선수가 기권하여 부전승을 했을 경우 적중특례처리되어 집니다. <br>
+* 해당 경기의 특이사항 발생 시 공지사항으로 사전에 알려드립니다. <br><br>
+ 
+<span class="title">7. 기타종목</span><br><br>
+
+해당 경기단체 혹은 협회의 규정에 따라 적용됩니다.								</td>
+							</tr>
+							<tr>
+								<td>
+									<table border="0" cellspacing="0" cellpadding="0" width="100%">
+										<tbody><tr>
+											<td><img src="../images/happy2012/uh_info_box_b_l.gif"></td>
+											<td width="100%"><img src="../images/happy2012/uh_info_box_b.gif" width="100%" height="12"></td>
+											<td><img src="../images/happy2012/uh_info_box_b_r.gif"></td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+						</tbody></table>
+						<table border="0" cellspacing="0" cellpadding="0" height="30"><tbody><tr><td></td></tr></tbody></table>
+						<table border="0" cellspacing="0" cellpadding="0" width="100%">
+							<tbody><tr>
+								<td>
+									<table border="0" cellspacing="0" cellpadding="0" width="100%">
+										<tbody><tr>
+											<td><img src="../images/happy2012/br_sub_t_03.gif"></td>
+											<td width="100%"><img src="../images/happy2012/uh_info_box_t.gif" width="100%" height="30"></td>
+											<td><img src="../images/happy2012/uh_info_box_t_r.gif"></td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<tr>
+								<td style="border-left:solid #062b37 2px;border-right:solid #062b37 2px;padding:30px 45px 25px 45px">
+									<span class="title">1. 축구</span><br><br>
+
+전/후반 90분 경기를 정규시간으로 기준으로 적용 (연장전 및 승부차기 제외)<br>
+<br><br>
+
+ 
+<span class="title">2. 야구</span><br><br>
+
+핸디캡  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 1회초 ~ 9회말  정규이닝 (연장전 포함)<br>
+오버/언더 :  1회초 ~ 9회말  정규이닝 (연장전  미포함. 정규이닝을 채우지못한경우, 이미오버가 난상태라도 1.0배 (적중특례) 처리) <br>
+홀/짝  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 1회초 ~ 9회말  정규이닝 (연장전  미포함)<br><br> 
+** 정규 9이닝을 채우지 못한채 특이사항(우천,자연재해 및 폭동 등)으로 인하여 경기가 중지된경우 핸디캡,  주최측(공식단체)의 처리기준에 의해 결과적용<br> 
+단, 오버/언더 의 경우 정규이닝을 채우지 못한상태에서 이미 오버가 난경우라도, 주최측(공식단체) 와 상관없이 1.0배 (적중특례) 처리됨<br>
+** 같은 날짜에 더블헤더 경기 시에는 더블헤더 1경기[DH1]와 2경기[DH2]를 구분하여 등록합니다. (한 경기만 등록될 경우 첫번째경기를 대상으로 적용)  <br>
+<br><br>
+ 
+<span class="title">3. 농구</span><br><br>
+
+1~4쿼터를 정규시간으로 하며, 연장전 포함 <br>
+<br><br>
+
+ 
+<span class="title">4. 배구</span><br><br>
+
+정규세트(세트스코어는 주최측 규정에 의함)<br>
+<br><br>
+
+ 
+<span class="title">5. 아이스하키</span><br><br>
+
+1~3 period를 정규시간으로 하며 연장전과 승부치기는 포함 하지않음. <br>
+<br><br>
 
 
+<span class="title">6. 기타종목</span><br><br>
 
+해당 경기단체 혹은 협회의 규정에 따라 적용됩니다. 								</td>
+							</tr>
+							<tr>
+								<td>
+									<table border="0" cellspacing="0" cellpadding="0" width="100%">
+										<tbody><tr>
+											<td><img src="../images/happy2012/uh_info_box_b_l.gif"></td>
+											<td width="100%"><img src="../images/happy2012/uh_info_box_b.gif" width="100%" height="12"></td>
+											<td><img src="../images/happy2012/uh_info_box_b_r.gif"></td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+						</tbody></table>
+						<table border="0" cellspacing="0" cellpadding="0" height="30"><tbody><tr><td></td></tr></tbody></table>
+						<table border="0" cellspacing="0" cellpadding="0" width="100%">
+							<tbody><tr>
+								<td>
+									<table border="0" cellspacing="0" cellpadding="0" width="100%">
+										<tbody><tr>
+											<td><img src="../images/happy2012/br_sub_t_04.gif"></td>
+											<td width="100%"><img src="../images/happy2012/uh_info_box_t.gif" width="100%" height="30"></td>
+											<td><img src="../images/happy2012/uh_info_box_t_r.gif"></td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<tr>
+								<td style="border-left:solid #062b37 2px;border-right:solid #062b37 2px;padding:30px 45px 25px 45px">
+									<span class="title">1. 일반 대상경기</span><br><br>
 
-				<!--正文内容 结束-->
-			</td>
-		</tr>
-		<tr><td height="7" bgcolor="#003247"><img src="./images/contentBox_b_HL.gif"></td></tr>
-	</tbody></table>
-	<table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td height="1"></td></tr></tbody></table>
-	<table border="0" cellspacing="0" cellpadding="0" width="100%">
-		<tbody><tr>
-			<td><img src="./images/contentBox_SD_l.gif"></td>
-			<td width="100%"><img src="./images/contentBox_SD_m.gif" width="100%" height="48"></td>
-			<td><img src="./images/contentBox_SD_r.gif"></td>
-		</tr>
-	</tbody></table>
-</td>
-<td width="222" align="right" valign="top">
-	<table border="0" cellspacing="0" cellpadding="0" width="216">
-		<tbody><tr>
-			<td width="216">
-				<div class="slider">
-					<div id="game_betslip" class="move" style="top: 0px; left: 0px; ">
-						<iframe id="FrameBetslip" name="FrameBetslip" marginheight="0" marginwidth="0" frameborder="0" width="216" src="./betslip.html" scrolling="no" allowtransparency="" style="height: 492px; ">
-						</iframe>
-					</div>
-				</div>
-			</td>
-		</tr>
-	</tbody></table>
-</td>
-</tr>
+<table border="0" cellspacing="0" cellpadding="0" class="informationHeader">
+	<tbody><tr>
+		<td style="width:90px;">경기종류</td>
+		<td style="width:130px;">경기방식</td>
+		<td>적용기준</td>
+	</tr>
 </tbody></table>
-<script type="text/javascript" src="./js/fx_loadBetslipSlider.js"></script>
-<script type="text/javascript">
-<!--
-// Init the value of stored in cookie for user selected bet **********************************
-f_InitBetslipByStorageValue("1X2");
-// *******************************************************************************************
-//-->
-</script>
+<table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td height="3"></td></tr></tbody></table>
+<table border="0" cellspacing="0" cellpadding="0" class="information1">
+	<colgroup>
+		<col style="text-align:center;width:80px">
+		<col style="text-align:center;width:120px;">
+		<col>
+	</colgroup>
+	<tbody>
+	<tr class="row1">
+		<td>축구</td>
+		<td>승/무/패</td>
+		<td>정규 전/후반까지의 결과 적용(연장전 및 승부차기 제외)</td>
+	</tr>
+	<tr class="row2">
+		<td>농구</td>
+		<td>승/패</td>
+		<td>정규 4쿼터까지 승부가 나지않을시 연장전 경기결과 적용(오버언더 미적용</td>
+	</tr>
+	<tr class="row1">
+		<td>배구</td>
+		<td>승/패</td>
+		<td>배구 승무패 대상경기 정산기준: 세트 스코어 정산, (S)로 표시<br>배구 핸디캡 대상경기 정산기준: 총득점 정산 , (H)로 표시</td>
+	</tr>
+	<tr class="row2">
+		<td>아이스하키</td>
+		<td>승/무/패</td>
+		<td>정규 3Period까지의 결과 적용(연장전 및 패널티샷[승부치기] 제외)</td>
+	</tr>
+	<tr class="row1">
+		<td>미식축구</td>
+		<td>승/패</td>
+		<td>정규 4쿼터까지 승부결과가 나지 않을시 연장전 경기결과 적용(오버언더 미적용)</td>
+	</tr>
+	<tr class="row2">
+		<td>핸드볼</td>
+		<td>승/무/패</td>
+		<td>전/후반 경기 결과만을 반영, 연장전 경기결과 미적용</td>
+	</tr>
+	<tr class="row1">
+		<td rowspan="6">야구</td>
+		<td>승/패</td>
+		<td>연장전을 반영하며 연장전에서도 승부를 가리지 못해 무승부 처리가 될 경우 1.0배 처리</td>
+	</tr>
+	<tr class="row2">
+		<td>핸디캡</td>
+		<td>연장전을 반영하며 정상적으로 핸디값 적용</td>
+	</tr>
+	<tr class="row1">
+		<td>오버언더</td>
+		<td>연장전을 반영하지 않으며 정규 9회말을 채우지 못한 상황에서 경기 종료시 1.0배 처리</td>
+	</tr>
+	<tr class="row2">
+		<td>4이닝</td>
+		<td>4회말 종료시점까지의 결과를 반영하며 핸디값 적용</td>
+	</tr>
+	<tr class="row1">
+		<td>4이닝 오버언더</td>
+		<td>4회말 종료시점까지의 양팀간의 점수합산을 반영하며 4회말을 채우지 못하고 경기가 종료된 경우 1.0배 처리</td>
+	</tr>
+	<tr class="row2">
+		<td>기타</td>
+		<td>
+			포스트폰드경기 도중 폭우 혹은 강풍으로 경기가 후일로 연기된 경우, <br>
+			1.0배 처리하며 9회를 채우지 못한 상황에서 경기가 종료되어도 해당 공식단체의 결과처리를 기준으로 정산
+		</td>
+	</tr>
+	<tr class="row1">
+		<td>스타크래프트</td>
+		<td colspan="2">공식단체의 무승부판정으로 재경기를 가질 경우 재경기 경기로 정산처리를 원칙으로 합니다.</td>
+	</tr>
+	</tbody>
+</table><br>
+<br><br>
+
+
+<span class="title">2. 오버/언더 대상경기</span><br><br>
+
+경기 결과에 관계없이 양팀간의 최종 점수의 합계를 반영하는 베팅 방식입니다.<br><br>
+
+<span class="info">KBO [Over/Under]<br>
+홈:삼성[O▲]<br> 
+원정:두산[U▼]
+기준점: -8.5 일때 </span><br><br>
+
+- 양팀간 점수 결과의 합이 9점 이상이면(9점포함) - <span class="warning">오버[O▲] 당첨!</span><br>
+- 양팀간 점수 결과의 합이 8점 이하면(8점포함) - <span class="warning">언더[U▼]쪽 당첨!</span><br><br>
+   <br>
+
+- 축구 : 연장전 경기 결과 반영 안함<br>
+- 야구 : 연장전 경기 결과 반영 안함(단 정규 9이닝을 채우지 못했을시 1.0배 적중특례 처리)<br>
+- 농구 : 연장전 경기 결과 반영 안함<br>
+- NHL : 연장전 경기 결과 반영 안함<br>
+- NFL : 연장전 경기 결과 반영 안함<br>
+- 핸드볼 : 연장전 경기 결과 반영 안함<br><br>
+
+<span class="warning">※ 즉, 모든 오버언더 대상 경기의 경우 연장전 미포함.</span><br>
+<br><br>
+
+
+<span class="title">3. 스페셜 대상경기 안내</span><br><br>
+
+<table border="0" cellspacing="0" cellpadding="0" class="informationHeader">
+	<tbody><tr>
+		<td style="width:90px;">경기종류</td>
+		<td style="width:130px;">경기방식</td>
+		<td>적용기준</td>
+	</tr>
+</tbody></table>
+<table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td height="3"></td></tr></tbody></table>
+<table border="0" cellspacing="0" cellpadding="0" class="information1">
+  <colgroup>
+  <col style="text-align:center;width:80px">
+  <col style="text-align:center;width:120px;">
+  <col>
+  </colgroup>
+  <tbody>
+    <tr class="row2"> 
+      <td rowspan="2">축구</td>
+      <td>선취골</td>
+      <td>선취골을 넣을 것 같은 팀을 예상하여 베팅하는 방식이며 골이 나오지 않았을시 1.0배(적중틀례), 연장전은 반영하지 않습니다.</td>
+    </tr>
+    <tr class="row2"> 
+      <td>첫옐로우카드</td>
+      <td>(현재 미서비스)</td>
+    </tr>
+    <tr class="row2"> 
+      <td rowspan="5">야구</td>
+      <td>4이닝핸디캡</td>
+      <td>1회초 ~ 4회말(4회말을 못채운채로 경기가 취소 또는 연기될시 1.0배 적중특례)<br>
+4이닝 결과마감 이후 우천이나 다른 어떠한 기타사항으로 경기가 취소 또는 연기가 되더라도 결과는 4이닝 그대로 반영이 됩니다.</td>
+    </tr>
+    <tr class="row2">
+      <td>4이닝 오버/언더</td>
+      <td>4회말까지의 양팀 득점의 합을 예상하여 베팅하는 방식 
+<br>(4회말을 못채운채로 경기가 취소 또는 연기될시 1.0배 적중특례)
+<br> 4이닝을 채우지 못한경우, 이미 오버가 나온 상태라도 1.0배 (적중특례) 처리) 
+<br>4이닝 결과마감 이후 우천이나 다른 어떠한 기타사항으로 경기가 취소 또는 연기가 되더라도 결과는 4이닝 그대로 반영이 됩니다.
+<br></td>
+    </tr>
+    <tr class="row2"> 
+      <td>첫홈런</td>
+      <td> 1 회초 ~ 9 회말 정규이닝(연장전 포함) 해당팀에서 최초로 타자가 투수로부터 첫홈런을 얻어내는 경기.</td>
+    </tr>
+    <tr class="row2"> 
+      <td>첫볼넷</td>
+      <td> 1 회초 ~ 9 회말 정규이닝(연장전 포함) 해당팀에서 최초로 타자가 투수로부터 볼넷을 얻어내는 경기.
+<br>첫볼넷의 경우 고의사구는 인정하나, 몸의 맞는볼 (데드볼 사구(死球))는 인정하지 않음.</td>
+    </tr>
+<tr class="row2">
+		<td>첫득점</td>
+		<td>1회초 ~ 9회말  정규이닝 (연장전 포함.해당팀에서 최초로 타자가 투수로부터 첫득점을 얻어내는 경기방식)<br>0:0으로 경기가 마감될시 적중특례 처리됩니다. 
+</td></tr>
+	<tr class="row2">
+		<td rowspan="9">농구</td>
+		<td>첫3점슛성공</td>
+		<td>첫3점슛 (3득점이 아닌 정확한 3점슛)을 성공시킬팀을 예상하여 베팅하는 방식</td></tr>
+	<tr class="row2">
+		<td>첫자유투성공</td>
+		<td>첫자유투를 얻어 성공시킬것 같은팀을 예상하여 베팅하는 방식 (추가 자유투 인정)</td>
+	</tr>
+	<tr class="row2">
+		<td>1쿼터,3쿼터(승패)</td>
+		<td>1쿼터,3쿼터의 승리팀을 예상하여 베팅하는 방식</td>
+	</tr>
+	<tr class="row2">
+		<td>1쿼터,3쿼터 Over/Under</td>
+		<td>1쿼터,3쿼터 각쿼터별로 양팀이 득점한 합 의 언더오버를 예상하여 베팅하는 방식</td>
+</tr>
+<tr class="row2">
+	<td>첫득점</td>
+	<td>첫득점을 성공시킬것 같은 팀을 예상하여 베팅하는 방식</td>
+       </tr>
+<tr class="row1">
+	<td>전반</td>
+	<td>(현재 미서비스)</td>
+</tr>
+<tr class="row1">
+	<td>전반 오버언더</td>
+	<td>(현재 미서비스)</td>
+</tr>
+<tr class="row1">
+	<td>2,3,4Q만 승리</td>
+	<td>(현재 미서비스)</td>
+</tr>
+<tr class="row1">
+	<td>첫10점</td>
+	<td>(현재 미서비스)<!--</TD-->
+   </td></tr>
+   <tr class="row1"> 
+     <td rowspan="5">배구<br>
+(현재미서비스)</td>
+</tr><tr class="row1">    
+    <td>1세트</td>
+    <td>1세트의 승리팀을 예상하여 베팅하는 방식(핸디 감안)</td>
+    </tr>
+    <tr class="row1"> 
+    <td>2세트</td>
+    <td>2세트만의 승리팀을 예상하여 베팅하는 방식(핸디 감안)</td>
+    </tr>
+    <tr class="row1"> 
+    <td>3세트</td>
+    <td>3세트만의 승리팀을 예상하여 베팅하는 방식(핸디 감안)</td>
+    </tr>
+    <tr class="row1"> 
+    <td>4세트</td>
+    <td>4세트만의 승리팀을 예상하여 베팅하는 방식(핸디 감안)</td>
+    </tr><tr class="row2">
+		<td rowspan="3">NHL</td>
+		<td>1피리어드</td>
+		<td>1피리어드만의 승패를 예상하여 베팅하는 방식 (핸디  감안 혹은 핸디가 없을경우 동점일 경우 1.0배 처리)</td>
+	</tr>
+	<tr class="row2">
+		<td>1피리어드 Over/Under</td>
+		<td>1피리어드만의 총점수를 기준점(핸디) 이상/이하로 예상하여 베팅하는 방식</td>
+   
+    </tr>
+<tr class="row2">
+		<td>첫득점</td>
+		<td>피리어드와는 상관없이 첫득점을 먼저하는 팀이 승리하는 경기방식<br> 
+        0:0으로 경기가 마감될시 적중특례 처리 되며 연장전 미포함 처리됩니다. 
+</td>
+   
+    </tr>
+
+</tbody>
+</table>
+ 								</td>
+							</tr>
+							<tr>
+								<td>
+									<table border="0" cellspacing="0" cellpadding="0" width="100%">
+										<tbody><tr>
+											<td><img src="../images/happy2012/uh_info_box_b_l.gif"></td>
+											<td width="100%"><img src="../images/happy2012/uh_info_box_b.gif" width="100%" height="12"></td>
+											<td><img src="../images/happy2012/uh_info_box_b_r.gif"></td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+						</tbody></table>
+                        <table border="0" cellspacing="0" cellpadding="0" align="center">
+							<tbody><tr>
+								<td height="45">
+								</td>
+							</tr>
+						</tbody></table>
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+    <tr><td height="7" bgcolor="#003247"><img src="../images/happy2012/contentBox_b_HL.gif"></td></tr>
+</tbody></table>
+<table border="0" cellspacing="0" cellpadding="0" width="989" align="center">
+	<tbody><tr><td height="1"></td></tr>
+    <tr>
+        <td><img src="../images/happy2012/contentBox_SD_l.gif"></td>
+        <td width="100%"><img src="../images/happy2012/contentBox_SD_m.gif" width="100%" height="48"></td>
+        <td><img src="../images/happy2012/contentBox_SD_r.gif"></td>
+    </tr>
+</tbody></table>
 <!-- 내용(컨텐츠) 끝 -->
 <!-- BOTTOM - 참고사이트 로그 및 카피라잇 -->
 <table border="0" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td height="10"></td></tr></tbody></table>
 <table border="0" cellspacing="0" cellpadding="0" align="center">
-<tbody><tr>
-<td style="padding-right:5px;"><img src="./images/footer_banner_afc_out.gif" border="0"></td>
-<td style="padding-right:5px;"><img src="./images/footer_banner_cl_out.gif" border="0"></td>
-<td style="padding-right:5px;"><img src="./images/footer_banner_el_out.gif" border="0"></td>
-<td style="padding-right:5px;"><img src="./images/footer_banner_fifa_out.gif" border="0"></td>
-<td style="padding-right:5px;"><img src="./images/footer_banner_mlb_out.gif" border="0"></td>
-<td style="padding-right:5px;"><img src="./images/footer_banner_nba_out.gif" border="0"></td>
-<td style="padding-right:5px;"><img src="./images/footer_banner_nfl_out.gif" border="0"></td>
-<td style="padding-right:5px;"><img src="./images/footer_banner_nhl_out.gif" border="0"></td>
-</tr>
+	<tbody><tr>
+    	<td style="padding-right:5px;"><img src="../images/happy2012/footer_banner_afc_out.gif" border="0"></td>
+    	<td style="padding-right:5px;"><img src="../images/happy2012/footer_banner_cl_out.gif" border="0"></td>
+    	<td style="padding-right:5px;"><img src="../images/happy2012/footer_banner_el_out.gif" border="0"></td>
+    	<td style="padding-right:5px;"><img src="../images/happy2012/footer_banner_fifa_out.gif" border="0"></td>
+    	<td style="padding-right:5px;"><img src="../images/happy2012/footer_banner_mlb_out.gif" border="0"></td>
+    	<td style="padding-right:5px;"><img src="../images/happy2012/footer_banner_nba_out.gif" border="0"></td>
+    	<td style="padding-right:5px;"><img src="../images/happy2012/footer_banner_nfl_out.gif" border="0"></td>
+    	<td style="padding-right:5px;"><img src="../images/happy2012/footer_banner_nhl_out.gif" border="0"></td>
+  </tr>
 </tbody></table>        
 <table border="0" cellspacing="0" cellpadding="0" align="center">
-<tbody><tr><td height="25"></td></tr>
-<tr><td>ⓒ2008-2009 ubat. All right reserved.</td></tr>
-<tr><td height="25"></td></tr>
+	<tbody><tr><td height="25"></td></tr>
+	<tr><td>ⓒ2008-2009 ubat. All right reserved.</td></tr>
+	<tr><td height="25"></td></tr>
 </tbody></table>
 <!-- BOTTOM - 참고사이트 로그 및 카피라잇 끝 -->
 
 
 
-<embed bgsound="" src="./data/file/B_sound/2089230664_vdDp0LTM_ECAABDECA780.wma" autostart="true" hidden="true">
-<div style="position:absolute;width:100%;height:100%;background-color:#000000;top:0px;filter: alpha(opacity=70); -khtml-opacity: 0.7; -moz-opacity:0.7; opacity: 0.7;z-index:8;display:none;z-index:-998" align="center" id="tbanner_div" onclick="setTimeout(&#39;tbanner_clear()&#39;,500)"></div>
-<div style="position:absolute;top:0px;z-index:-999;color:#FFFFFF;width:100%;height:100%;display:none;" align="center" id="tbanner_div2" onclick="setTimeout(&#39;tbanner_clear()&#39;,500);">
-<table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%">
-<tbody><tr align="center">
-	<td><a href="http://www.ubat-ball.com/apk/ubatapp.apk" target="_blank"><img src="./images/android.jpg" border="0"></a></td>
-</tr>
-</tbody></table>
+<div class="RDVideoHelper" style="position: absolute; z-index: -1; display: block; width: 0px; height: 0px; left: 0px; top: 4554px;"><object class="RDVideoObject" type="application/x-rn-downloaderpepperflashvideoshim-plugin" src="http://www.ubat-ball.com/_localoffice/data/file/B_sound/2089230664_vdDp0LTM_ECAABDECA780.wma" width="0" height="0" data-offsetleft="0" data-offsettop="4554"></object></div><embed bgsound="" src="../data/file/B_sound/2089230664_vdDp0LTM_ECAABDECA780.wma" autostart="true" hidden="true">
+<div style="position:absolute;width:100%;height:100%;background-color:#000000;top:0px;filter: alpha(opacity=70); -khtml-opacity: 0.7; -moz-opacity:0.7; opacity: 0.7;z-index:8;display:none;z-index:-998" align="center" id="tbanner_div" onclick="setTimeout('tbanner_clear()',500)"></div>
+<div style="position:absolute;top:0px;z-index:-999;color:#FFFFFF;width:100%;height:100%;display:none;" align="center" id="tbanner_div2" onclick="setTimeout('tbanner_clear()',500);">
+	<table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%">
+		<tbody><tr align="center">
+			<td><a href="/apk/ubatapp.apk" target="_blank"><img src="/_localoffice/images/android.jpg" border="0"></a></td>
+		</tr>
+	</tbody></table>
 <script type="text/javascript">
 <!--
-function tbanner_fun()
-{
-var f = document.getElementById("tbanner_div");
-var f2 = document.getElementById("tbanner_div2");
-f.style.display = "block";
-f2.style.display = "block";
-f.style.height = (document.all)?document.documentElement.scrollHeight:document.body.scrollHeight+'px';
-//f2.style.top = (document.all)?document.documentElement.scrollTop:document.body.scrollTop+'px';
-f2.style.top = '300px';
-f.style.zIndex = '900';
-f2.style.zIndex = '910';
-}
-function tbanner_clear()
-{
-var f = document.getElementById("tbanner_div");
-var f2 = document.getElementById("tbanner_div2");
-f.style.display = "none";
-f2.style.display = "none";
-f.style.zIndex = '-900';
-f2.style.zIndex = '-910';
-}
+	function tbanner_fun()
+	{
+		var f = document.getElementById("tbanner_div");
+		var f2 = document.getElementById("tbanner_div2");
+		f.style.display = "block";
+		f2.style.display = "block";
+		f.style.height = (document.all)?document.documentElement.scrollHeight:document.body.scrollHeight+'px';
+		//f2.style.top = (document.all)?document.documentElement.scrollTop:document.body.scrollTop+'px';
+		f2.style.top = '300px';
+		f.style.zIndex = '900';
+		f2.style.zIndex = '910';
+	}
+	function tbanner_clear()
+	{
+		var f = document.getElementById("tbanner_div");
+		var f2 = document.getElementById("tbanner_div2");
+		f.style.display = "none";
+		f2.style.display = "none";
+		f.style.zIndex = '-900';
+		f2.style.zIndex = '-910';
+	}
 //-->
 </script>
-
-
-</div></body></html>
