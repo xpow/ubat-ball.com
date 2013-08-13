@@ -113,6 +113,7 @@ TABLE.gameListOverview TD.normal {CURSOR:default;}
 
 TABLE.gameCurrentHeader {background:#0b2442;border-top:solid #384c65 1px;border-bottom:solid #384c65 1px;width:100%;height:32px;table-layout:fixed;}
 TABLE.gameCurrentHeader td {text-align:center;}
+
 TABLE.gameCurrentList {border-left:solid 1px #4c4c4c;border-top:solid 1px #4c4c4c;width:100%;}
 TABLE.gameCurrentList TD {height:26px;border-bottom:solid 1px #4c4c4c;border-right:solid 1px #4c4c4c;padding:0;VERTICAL-ALIGN:middle;CURSOR:hand;TEXT-DECORATION:none;color:#b7b6b6;}
 TABLE.gameCurrentList TR.disabled TD {padding:1px;BACKGROUND-COLOR:#062b38;COLOR:#686868;CURSOR:default;}
@@ -158,6 +159,9 @@ TABLE.gameCurrentList TR.row1 TD.extended TD.mouseOverColor TABLE.teamName TD {b
 TABLE.gameCurrentList TR.row1 TD.extended TABLE TD.selectTeam {BACKGROUND:#2c3701;}
 TABLE.gameCurrentList TR.row1 TD.extended TABLE TD.selectTeam TABLE.teamName {width:100%;}
 TABLE.gameCurrentList TR.row1 TD.extended TABLE TD.selectTeam TABLE.teamName TD {border:none;}
+
+TABLE.gameCurrentList TR.disabled1 TD.miss {CURSOR:default; color:red;}
+TABLE.gameCurrentList TR.disabled1 TD.winner {CURSOR:default; color:green;}
 
 
 TABLE.gameResultHeader {background:#0e2630;border-top:solid #434a54 1px;border-bottom:solid #434a54 1px;width:100%;height:32px;table-layout:fixed;}
